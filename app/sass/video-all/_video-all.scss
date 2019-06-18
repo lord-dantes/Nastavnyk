@@ -1,0 +1,184 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);
+
+.video-all{
+  margin-bottom: 100px;
+  &.owl-carousel .owl-dots.disabled {
+    display: block;
+  }
+  & .owl-nav.disabled{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  & .owl-dots{
+      display: none;
+  }
+  & .owl-prev{
+      background: url(../img/left.png) no-repeat !important;
+      background-size: contain !important;
+      width: 35px;
+      height: 50px;
+      display: block;
+      & span{
+        display: none;
+      }
+  }
+  & .owl-next{
+      background: url(../img/right.png) no-repeat !important;
+      background-size: contain !important;
+      width: 38px;
+      height: 50px;
+      display: block;
+      & span{
+        display: none;
+      }
+  }
+  &-wrapp{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  &-link{
+    & > .video-all-btn{
+      @include yellow-btn;
+      width: 200px;
+      height: 50px;
+      padding: 0;
+      @include flex-center-center;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+    }
+    & > a{
+      @include blue-btn;
+    }
+  }
+  &-check{
+    &-name{
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      color: $main-color;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+  }
+  &-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    & img{
+      width: 215px!important;
+      height: 140px!important;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 10px;
+    }
+  }
+  &-line{
+    width: 100%;
+    height: 1px;
+    background: rgba(151, 151, 151, 0.23);
+    margin-bottom: 35px;
+  }
+  &-card{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    width: 48%;
+    padding: 30px 60px;
+    margin: 10px;
+    & h2{
+      font-size: 30px;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+
+.video-all-check{
+  input[type=radio].with-font,
+  input[type=checkbox].with-font {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    cursor: pointer;
+  }
+
+  input[type=radio].with-font ~ label:before,
+  input[type=checkbox].with-font ~ label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f1db";
+    letter-spacing: 10px;
+    color: #aaa;
+    width: 1.4em;
+    cursor: pointer;
+  }
+  input[type=checkbox].with-font ~ label:before {
+    content: "\f096";
+    cursor: pointer;
+  }
+  input[type=checkbox].with-font:checked ~ label:before {
+    content: "\f046";
+    color: $main-color;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width:767px){
+  .header{
+    padding: 15px 0px;
+    &-logo{
+      margin:0px;
+    }
+    &-wrapp{
+      flex-direction: column;
+    }
+    &-btn{
+      flex-direction: column;
+    }
+    &-login{
+      text-align: center;
+    }
+    &-donate{
+      margin:0px;
+    }
+  }
+  .video-all{
+    &-card{
+      width: 100%;
+      padding: 25px;
+    }
+    &-content{
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width:992px){
+  .video-all-content img{
+    margin: 0px;
+  }
+  .video-all-card > h2{
+    font-size: 28px;
+    margin-left:3px;
+  }
+  .video-all{
+    margin-bottom:50px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px){
+  .video-all-card{
+    width: 100%;
+  }
+}

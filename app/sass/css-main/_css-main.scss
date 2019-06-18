@@ -1,0 +1,131 @@
+.css-main{
+  padding:110px 0px 0px 0px;
+  position: relative;
+  z-index: 1;
+  &::before{
+    background-image: url(../img/green-cube-main.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 38%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  &-video{
+    & iframe{
+      border-radius: 10px;
+    }
+    & p{
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+      color: $grafit-color;
+      text-align: right;
+    }
+  }
+  &-page{
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-link{
+    & a{
+      width: 250px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      background-color: $css-color;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      padding: 20px 0;
+      color: #fff;
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1.04px;
+      line-height: 18px;
+      &:hover{
+        box-shadow: 2px 5px 10px 0 $css-color;
+      }
+    }
+  }
+  &-circle{
+    border: 3px solid  #bbbd3f;
+    box-shadow: 2px 5px 10px 0 rgba(0,0,0,0.5);
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -35px;
+    right: -45px;
+    & > span{
+      color: $css-color;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0.4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      background: #aaa;
+      background: linear-gradient(180deg, #F8D212 0%, #EFF30C 100%);
+      box-shadow: 2px 5px 10px 0 rgba(0,0,0,0.5);
+      z-index: 3;
+    }
+  }
+  &-wrapp{
+    & > div{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    & h2{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1.16px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+  }
+  &-item{
+    text-align: center;
+    position: relative;
+    &_results{
+      display: inline-block;
+      position: relative;
+    }
+    & p{
+      font-size: 130px;
+      font-weight: bold;
+      letter-spacing: 0.52px;
+      color: #fff;
+      margin-bottom: 0;
+      line-height: 1;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    & > span{
+      font-size: 24px;
+      letter-spacing: 0.81px;
+      color: #fff;
+      display: block;
+      text-align: center;
+      line-height: 1.3;
+    }
+  }
+  &-stat{
+    background: $css-color;
+    padding: 85px 0 115px;
+  }
+}

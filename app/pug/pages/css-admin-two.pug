@@ -1,0 +1,87 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        .container
+            section.admin-log.css-admin-log
+                .admin-log-card
+                    .admin-log-head
+                        img(src='img/mentor.jpg', alt='')
+                        .admin-log-title
+                            h2
+                                | Максим Пеcтров
+                            span Дата народження
+                            p 25.03.1993
+
+                        a(href='' title='Edit')
+                            i.fas.fa-pencil-alt
+
+                    .admin-log-line
+                    .admin-log-info
+                        .admin-log-description
+                            span Телефон:
+                            p +38 (063) 234 12 11
+                            span Email:
+                            p Maks12_1@gmail.com
+                            span Адреса:
+                            p  пр. Перемоги, 113 г. Киев
+                        .admin-log-password
+                            span Змінити пароль:
+                            input(type='password', placeholder='Введіть старий пароль')
+                            input(type='password', placeholder='Введіть новий пароль')
+                            input(type='password', placeholder='Підтвердіть новий пароль')
+
+                .admin-log-card
+                    .admin-log-head
+                        .admin-log-img
+                            img(src='img/css-user.svg', alt='')
+                            .setting-card-icon
+                                label.add-img(for='files')
+                                    i.fas.fa-plus
+                                input#files(style='display:none;', type='file')
+                                a.delete-img(href='', title='Delete image')
+                                    i.fas.fa-trash
+
+                        .admin-log-title
+                            input(type='text', placeholder='Имя')
+                            input(type='text', placeholder='Фамилия')
+
+                            span Дата народження
+                            input(type='text', placeholder='дд.мм.гг')
+
+                        a(href='' title='Submit')
+                            i.fas.fa-check
+
+                    .admin-log-line
+                    .admin-log-info
+                        .admin-log-description
+                            span Телефон:
+                            input(type='text', placeholder='Ваш телефон')
+                            span Телефон:
+                            input(type='text', placeholder='Ваш телефон')
+                            span Телефон:
+                            input(type='text', placeholder='Ваш телефон')
+                            span Email:
+                            input(type='text', placeholder='Ваш email')
+                            span Адреса:
+                            input(type='text', placeholder='Ваша адреса')
+                        .admin-log-password
+                            span Змінити пароль:
+                            input(type='password', placeholder='Введіть старий пароль')
+                            input(type='password', placeholder='Введіть новий пароль')
+                            input(type='password', placeholder='Підтвердіть новий пароль')
+                            input(type='text', placeholder='Введіть старий пароль')
+
+                    button Зберегти
+
+
+
+
+
+
+
+
+
+
+
+    include ../templates/footer-log.pug

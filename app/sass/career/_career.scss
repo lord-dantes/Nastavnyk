@@ -1,0 +1,383 @@
+.body-hidden{
+  overflow: hidden;
+}
+.career{
+  margin-bottom: 100px;
+  &-modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.5);
+    z-index: 15;
+    &-reg{
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width:100%;
+      height: 100%;
+      background: rgba(0,0,0, 0.5);
+      z-index: 15000;
+    }
+  }
+  &-map{
+    height: 500px;
+    width: 100%;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    border-radius: 8px;
+  }
+  &-slider{
+    position: relative;
+    & .owl-carousel .owl-nav{
+      display: none;
+    }
+  }
+  &-card{
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    padding: 40px 70px;
+    width: 610px;
+    position: absolute;
+    top: 3%;
+    left: 34%;
+    z-index: 200;
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151,151,151,0.23);
+      margin-bottom: 35px;
+    }
+    &-reg{
+      width: 630px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+      margin: 0 auto;
+      padding: 45px 75px;
+      position: absolute;
+      z-index: 15000;
+      right: 0;
+      left: 0;
+      top: 3%;
+      & > button{
+        margin: 0 auto;
+        border: 0;
+        background: $main-color;
+        border-radius: 8px;
+        color: #fff;
+        width: 160px;
+        padding: 12px 0;
+        margin-top: 30px;
+      }
+      & > input, & > textarea, & > button{
+        display: block;
+      }
+      & > input, & > textarea{
+        width: 100%;
+        padding: 10px 20px;
+        border: 0;
+        background:#E2EDF0;
+        border-radius: 2px;
+        margin-bottom: 12px;
+        &::placeholder{
+          opacity: 0.4;
+          font-size: 15px;
+          letter-spacing: 1.04px;
+        }
+      }
+      & p{
+        font-size: 15px;
+        letter-spacing: 1.04px;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    &-close{
+      width: 25px;
+      text-align: center;
+      margin-left: auto;
+      font-size: 40px;
+      color: #979797;
+      font-weight: 100;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 35px;
+      &:hover{
+        color: $black-color;
+      }
+    }
+    & > h4{
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &-wrapp{
+      display: flex;
+      justify-content: flex-start;
+      & > img{
+        width: 170px;
+        height: 170px;
+        margin-right: 30px;
+      }
+    }
+    &-check{
+      margin: 25px 0 15px;
+      & >label{
+        margin-bottom: 5px;
+      }
+    }
+    &-info{
+      & > button{
+        background: $main-color;
+        display: block;
+        border: 0;
+        border-radius: 8px;
+        color: $white-color;
+        padding: 5px 30px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.56px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
+      }
+      & > h5 {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1.33px;
+        margin-bottom: 20px;
+      }
+      & > p{
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        margin-bottom: 0;
+      }
+      & > span{
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        color: $main-color;
+        margin-bottom: 5px;
+        display: block;
+      }
+    }
+  }
+  &-line{
+    width: 1px;
+    height: 33px;
+    background: #fff;
+  }
+  & > h2{
+    font-size: 30px;
+    font-weight:bold;
+    letter-spacing: 1.16px;
+    color: $grafit-color;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  & > span{
+    display: block;
+    text-align: center;
+    margin-bottom: 17px;
+    font-size: 15px;
+    letter-spacing: 1.04px;
+    color: $black-color;
+  }
+  &-search{
+    width: 675px;
+    background: #E2EDF0;
+    height: 55px;
+    padding:0 35px;
+    border-radius: 2px;
+    margin:0 auto;
+    @include flex-start-center;
+    & > i{
+      font-size: 25px;
+      color: #7C7D7E;
+      margin-right: 30px;
+    }
+    & > input{
+      border: 0;
+      background: transparent;
+      width: 100%;
+    }
+  }
+  &-add{
+    width: 160px;
+    display: block;
+    text-align: center;
+    margin: 0 0 20px auto;
+    & > i{
+      margin: 0 auto 5px;
+      display: block;
+      background: #368CCA;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      color: #fff;
+      @include flex-center-center;
+    }
+    & > span{
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      color: $black-color;
+    }
+  }
+  &-table{
+    margin-bottom: 70px;
+    padding: 10px;
+    &-header{
+     @include flex-between-center;
+      background: $main-color;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      border-radius: 8px;
+      color: #fff;
+      padding: 10px 0;
+      margin-bottom: 25px;
+    }
+    &-success{
+      width: 256px;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      border-radius: 8px;
+      padding: 10px 15px;
+      text-align: center;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      position: relative;
+      color: $black-color;
+      opacity: 0.5;
+      cursor: default;
+      & > p{
+        margin-bottom: 0;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+        text-align: center;
+      }
+    }
+    &-btn{
+      width: 256px;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      border-radius: 8px;
+      padding: 10px 15px;
+      text-align: center;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      position: relative;
+      color: $black-color;
+      cursor: pointer;
+      & > p{
+        margin-bottom: 0;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+        text-align: center;
+      }
+      &:hover{
+        color: $main-color;
+      }
+    }
+    &-title{
+      width: 256px;
+      text-align: center;
+      position: relative;
+    }
+    &-item{
+      width: 256px;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      border-radius: 8px;
+      padding: 10px 15px;
+      text-align: center;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      position: relative;
+      color: $black-color;
+      &:first-child{
+        background: $main-color;
+        color: $white-color;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.04px;
+      }
+      & > p{
+        margin-bottom: 0;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+        text-align: center;
+      }
+      & > i{
+        margin-left: 40px;
+        color: #D95B5B;
+        font-size: 20px;
+        position: absolute;
+        top: 17px;
+        right: 10px;
+      }
+    }
+    &-line{
+      @include flex-between-center;
+      margin-bottom: 15px;
+    }
+  }
+}
+@media screen and (max-width: 991px){
+  .career-add{
+    display: flex;
+    margin:20px auto;
+    align-items: center;
+    justify-content: center;
+    & > i{
+      height: 25px;
+      margin:0 auto;
+    }
+  }
+  .career-table-header{
+    flex-direction: column;
+  }
+  .career-table-line{
+    flex-direction: column;
+  }
+  .career-card{
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 25px;
+    border-radius: 0px;
+    &-wrapp{
+      flex-direction: column;
+      & > img{
+        width: 100px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px){
+  .career-map-frame{
+    width: 100%;
+  }
+  .career-table-title{
+    width: 24%;
+  }
+  .career-table-line{
+    justify-content: space-around;
+  }
+}

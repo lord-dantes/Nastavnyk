@@ -1,0 +1,213 @@
+extends ../default.pug
+block pageContent
+		include ../templates/header-admin.pug
+		.content
+				section.admin-link-nav
+						.container
+								a.admin-link(href='') Особистий кабінет наставника >
+								p.admin-link-title
+										| Денис Сверидов
+
+				section.diary
+						.container
+								.diary-wrapp
+										.diary-header
+												.diary-header-link
+														a(href='')
+																i.fas.fa-plus
+														span Додати зустріч
+
+
+										.diary-block(data-id=1)
+												.diary-card
+														h2 Були в зоопарку
+														.diary-line
+														span 05. 04. 2018
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														a.block-open-more(href='') Читати далі
+												.photo-box
+													ul.photos
+														li
+															button.photo-btn_arrow
+																img(src="../../img/up.png", alt="")
+														li.photo-item
+															button.photo_btn
+																img(src="../../img/2.jpg")
+														li.photo-item
+															button.photo_btn
+																img(src="../../img/3.jpg")
+														li.photo-item
+															button.photo_btn
+																img(src="../../img/4.jpg")
+														li.photo-item
+															button.photo_btn
+																img(src="../../img/5.jpg")
+														li
+															button.photo-btn_arrow
+																img(src="../../img/down.png", alt="")
+													.photo-box_main-img
+														button.photo_btn-main-img
+															img(src="../../img/2.jpg", alt="")
+
+
+
+										.diary-block-open(data-id=1)
+												.diary-block-wrapp
+														.diary-block-left
+																h2 Були в зоопарку
+																.diary-block-line
+																span 05. 04. 2018
+														.diary-block-right
+																.diary-block-link
+																		.diary-block-link-item
+																				a.diary-block-frown(href='javascript:void(0);')
+																						i.far.fa-frown
+																				span Фото дня не завантажені
+
+																		.diary-block-link-item
+																				label(for='files')
+																						i.fas.fa-plus
+																						span Додати фото
+																				input#filess(style='display:none;', type='file')
+
+																		.diary-block-link-item
+																				a.diary-block-edit(href='')
+																						i.fas.fa-pencil-alt
+																.diary-block-trash
+																		a(href='')
+																				i.fas.fa-trash
+												.diary-block-content
+														h4 Опис:
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з
+																| наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														h4 Спостереження за вихованцем:
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з
+																| наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														h4 Замітка для наступної зустрічі:
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з
+																| наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														a.diary-block-close(href='') Згорнути
+
+
+
+
+
+
+
+
+										.diary-block(data-id=2)
+												.diary-card
+														h2 Були в кино
+														.diary-line
+														span 05. 04. 2018
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														a.block-open-more(href='') Читати далі
+												.diary-slider-empty
+														a.diary-slider-frown(href='javascript:void(0);')
+																i.far.fa-frown
+																span Фото дня не завантажені
+
+														.diary-slider-img
+																label(for='files')
+																		i.fas.fa-plus
+																span Додати фото
+																input#files(style='display:none;', type='file')
+
+
+										.diary-block-open(data-id=2)
+												.diary-block-wrapp
+														.diary-block-left
+																h2 Були в кино
+																.diary-block-line
+																span 05. 04. 2018
+														.diary-block-right
+																.diary-block-link
+																		.diary-block-link-item
+																				a.diary-block-frown(href='javascript:void(0);')
+																						i.far.fa-frown
+																				span Фото дня не завантажені
+																		.diary-block-link-item
+																				a.diary-block-img(href='')
+																						i.fas.fa-plus
+																				span Додати фото
+																		.diary-block-link-item
+																				a.diary-block-edit(href='')
+																						i.fas.fa-pencil-alt
+																.diary-block-trash
+																		a(href='')
+																				i.fas.fa-trash
+												.diary-block-content
+														h4 Опис:
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з
+																| наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														h4 Спостереження за вихованцем:
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з
+																| наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														h4 Замітка для наступної зустрічі:
+														p
+																| Ми побачили різних тварин. Вони позували нам, а ми робили чудові фотографії. Були там лев, рись, тигр, мавпочки, вовк, лисиця, пантера. Побачили дуже багато різних птахів, навіть хижаків сокола та орла. Здалеку ми спостерігали за верблюдом, остерігалися його поганої звички. А маленькі козенята їли з
+																| наших рук свіжу траву, її багато росте біля їхньої загорожі.
+														a.diary-block-close(href='') Згорнути
+
+
+
+
+										.diary-block-open-edit(data-id=2)
+												.diary-block-wrapp
+														.diary-block-left
+																input.diary-block-input-name(type='text' value='' placeholder='Где вы были')
+																.diary-block-line
+																input.diary-block-input-date(type='text' value='' placeholder='дд.мм.рiк')
+																.diary-block-link-item.diary-o-edit-icon
+																		a.diary-block-edit(href='')
+																				i.fas.fa-pencil-alt
+																.diary-block-trash.diary-o-trash-icon
+																		a(href='')
+																				i.fas.fa-trash
+														.diary-block-right
+																.diary-block-link
+																		.diary-block-link-item
+																				a.diary-block-frown(href='javascript:void(0);')
+																						i.far.fa-frown
+																				span Фото дня не завантажені
+																		.diary-block-link-item
+																				label(for='files')
+																						i.fas.fa-plus
+																						span Додати фото
+																				input#filess(style='display:none;', type='file')
+
+																		.diary-block-link-item.diary-none-edit-item
+																				a.diary-block-edit(href='')
+																						i.fas.fa-pencil-alt
+																.diary-block-trash.diary-none-edit-item
+																		a(href='')
+																				i.fas.fa-trash
+												.diary-block-content
+														h4 Опис:
+														textarea(rows='4' placeholder='Опис:')
+
+														h4 Спостереження за вихованцем:
+														textarea.alert-border(rows='4' placeholder='Спостереження за вихованцем:')
+
+														h4 Замітка для наступної зустрічі:
+														textarea(rows='4' placeholder='Замітка для наступної зустрічі:')
+
+														input.form-dating-button(type="submit" value="Зберегти")
+
+										//- .alert.alert-danger(role='alert')
+										//-     strong Oh snap!
+										//-     |  Change a few things up and try submitting again.
+
+
+
+
+
+		include ../templates/pre-footer-contact
+		include ../templates/footer.pug

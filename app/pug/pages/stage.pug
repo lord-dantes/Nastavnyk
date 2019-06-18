@@ -1,0 +1,63 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.stage
+            .container
+                h2  Обери етап, на якому ти зараз знаходишся:
+                .stage-wrapp
+                    .stage-wrapp-item
+                        p.stage-wrapp-one
+                            | Це мій перший крок,
+                            br
+                            |я ще нічого не
+                            br
+                            |робив
+
+                        a(href='first-stage.html')
+                            .stage-wrapp-icon
+                                .stage-wrapp-img
+                                    img(src='img/nipple.png', alt='')
+
+                    .stage-wrapp-item
+                        p.stage-wrapp-two
+                            | Я вже був в Центрі
+                            br
+                            | соціальних служб,
+                            br
+                            | тренінг ще не проходив
+
+                        a(href='second-stage.html', target='_blank')
+                            .stage-wrapp-icon
+                                .stage-wrapp-img
+                                    img(src='img/bottle.png', alt='')
+
+                    .stage-wrapp-item
+                        p.stage-wrapp-free
+                            | Я вже пройшов
+                            br
+                            | тренінг для
+                            br
+                            | наставників
+
+                        a(href='third-stage.html', target='_blank')
+                            .stage-wrapp-icon
+                                .stage-wrapp-img
+                                    img(src='img/bottle-full.png', alt='')
+
+                    .stage-wrapp-item
+                        p.stage-wrapp-four
+                            | Я вже взаємодію
+                            br
+                            | з дитиною
+                            br
+                            | (є підписаний договір)
+
+                        a(href='', target='_blank')
+                            .stage-wrapp-icon-end
+                                img(src='img/baby.png', alt='')
+
+
+
+
+    include ../templates/footer-log.pug

@@ -1,0 +1,12 @@
+.header-green{
+  &-log{
+    box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+    padding: 15px 0;
+    z-index: 10;
+    & .header-notification{
+      & a i{
+        color: $css-color;
+      }
+    }
+  }
+}

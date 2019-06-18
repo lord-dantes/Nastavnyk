@@ -1,0 +1,28 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.admin-link-nav
+            .container
+                a.admin-link(href='') Особистий кабінет наставника >
+                a.admin-link(href='')  Відео тренінги >
+                a.admin-link.active(href='')  Як боротися з маніпуляціями дитини
+
+        section.video-see
+            .container
+                h2 Як боротися з маніпуляціями дитини?
+                .video-see-frame
+                    iframe(class="video-see-iframe" width='720', height='453', src='https://www.youtube.com/embed/yovVWXkhaX4', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+                .video-see-download
+                    p Матеріали для скачування:
+                    a(href='' target='_blank')
+                        span
+                            i.fas.fa-paperclip
+                        | Матеріал 1
+                    a(href='' target='_blank')
+                        span
+                            i.fas.fa-paperclip
+                        | Матеріал 1
+
+    include ../templates/pre-footer-contact.pug
+    include ../templates/footer-log.pug

@@ -1,0 +1,29 @@
+.gr-o-main-wrapp div {
+  margin-bottom: 70px;
+}
+
+.gr-o-main-item p {
+  font-size: 70px;
+}
+
+.gr-o-main-item span {
+  font-size: 18px;
+}
+
+.gr-o-main-circle {
+  top: -45px;
+  right: 10px;
+}
+
+.gr-o-main-circle span {
+  /*color: $gr-o-main;*/
+}
+
+.gr-o-main-item {
+  width: 225px;
+}
+
+.gr-o-main-stat {
+  /*background: $gr-o-main;*/
+}
+/*# sourceMappingURL=../../css/gr-o/gr-o-admin.css.map */

@@ -1,0 +1,41 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.register
+            .container
+                h2  Реєструйся в наставництві
+                .register-wrapp
+                    .register-block-left
+                        img(src='img/baby.jpg', alt='')
+                        p
+                            | в інтернатних закладах
+                            br
+                            | україни перебуває
+                        span 105 703 дітей
+                    .register-block-center
+                        img(src='img/parrent.jpg', alt='')
+                        .main-mentor-interactiv-item
+                            .wrapp-numb
+                                .numb 0
+                                .numb 0
+                                .numb 4
+                                .numb 7
+                        span
+                            | Дітей мають наставників
+                    .register-block-right
+                        form(action='')
+                            input(type='text', placeholder='Ім’я')
+                            input(type='text', placeholder='Побатькові')
+                            input(type='email', placeholder='Email')
+                            input(type='phone', placeholder='Телефон')
+                            button  Реєстрація
+                            a(href='register.html') Реєстрація через Facebook
+                            .register-line
+                            span
+                                | Маєте акаунт?
+                                a(href='') Увійдіть
+
+
+
+    include ../templates/footer-log.pug

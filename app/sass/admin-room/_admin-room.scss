@@ -1,0 +1,698 @@
+.admin{
+  &-lasheader-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-history-with-child{
+    display: flex;
+    & span{
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      justify-content: center;
+      background: rgb(54, 140, 202);
+      border-radius: 20px;
+      font-size: 12px;
+      margin-right: 5px;
+      font-weight: bold;
+    }
+    & p{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 15px;
+      letter-spacing: 2.139429px;
+      font-size: 12px;
+    }
+  }
+  &-wrapp{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-left{
+    width: 43%;
+  }
+  &-right{
+    width: 54%;
+  }
+  &-card{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    &-post{
+      & > p{
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.46px;
+        color: $grafit-color;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      & > a{
+        @include blue-btn;
+        margin: 0 auto;
+        @include flex-center-center;
+      }
+    }
+    &-dream{
+      display: flex;
+      justify-content: space-between;
+      & > div{
+        width: 49%;
+      }
+      &-name{
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.33px;
+        color: $grafit-color;
+      }
+      &-item{
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        line-height: 20px;
+        color: $grafit-color;
+        margin-bottom: 25px;
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 18px;
+    }
+    &-name{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+    }
+    &-birth{
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0.33px;
+      color: $grafit-color;
+      margin-bottom: 4px;
+    }
+    &-data{
+      font-size: 14px;
+      letter-spacing: 0.46px;
+      margin-bottom: 0;
+    }
+    &-bage{
+      margin-left: auto;
+      background: $main-color;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      @include flex-center-center;
+      color: #fff;
+    }
+    &-info{
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      & > img{
+        width: 110px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 50px;
+      }
+    }
+  }
+  &-school{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    & > a{
+      display: block;
+      width: 100%;
+      text-align: right;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+    }
+    &-title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 25px;
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 20px;
+    }
+    &-video{
+      &-item{
+        @include flex-start-center;
+        margin-bottom: 25px;
+        & > img{
+          border: 1px solid $main-color;
+          width: 100px;
+          height: 70px;
+          object-fit: cover;
+          background: $light-blue;
+          display: block;
+          position: relative;
+          border-radius: 2px;
+          margin-right: 15px;
+          &::after{
+            background: url(../img/play.png) no-repeat;
+            position: absolute;
+            content: '';
+            margin: auto;
+            top: 35%;
+            left: 40%;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+      &-title{
+        & > p{
+          font-size: 14px;
+          letter-spacing: 0.54px;
+          color: $grafit-color;
+          margin-bottom: 15px;
+        }
+        & > a{
+          font-size: 15px;
+          letter-spacing: 0.15px;
+          color: $main-color;
+        }
+        &-item{
+          @include flex-start-center;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  &-walk {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    & > a{
+      display: block;
+      width: 100%;
+      text-align: right;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+    }
+    &-title {
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 25px;
+    }
+    &-line {
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 25px;
+    }
+    &-place {
+      @include flex-start-center;
+      margin-bottom: 60px;
+      & > img {
+        width: 145px;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 2px;
+        margin-right: 25px;
+        display: block;
+      }
+      & h4 {
+        color: $grafit-color;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.46px;
+      }
+      & p {
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        color: $grafit-color;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-social{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 37px;
+    &-btn{
+      margin: 0 auto;
+      @include blue-btn;
+    }
+    &-dialog{
+      margin-bottom: 18px;
+      & > span{
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        color: $grafit-color;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-left: 10px;
+      }
+      &-content{
+        background:rgba(226,237,240,0.37);
+        padding: 10px;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+        & > p{
+          font-size: 18px;
+          letter-spacing: 1.14px;
+          color: $main-color;
+          margin-bottom: 13px;
+        }
+        & > span{
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          color: $grafit-color;
+          font-weight: 500;
+          display: block;
+        }
+      }
+      &-wrapp{
+        @include flex-start-center;
+        & > img{
+          height: 40px;
+          width: 40px;
+          border-radius: 50px;
+          object-fit: cover;
+          margin-right: 10px;
+        }
+      }
+      &-line{
+        width: 100%;
+        height: 1px;
+        background: rgba(151, 151, 151, 0.23);
+        margin-bottom: 20px;
+        &-btn{
+          margin: 20px 0;
+          width: 100%;
+          height: 1px;
+          background: rgba(151, 151, 151, 0.23);
+        }
+      }
+    }
+    &-wrapp{
+      &-icon{
+        @include flex-end-center;
+        font-size: 13px;
+        margin-bottom: 15px;
+        & span{
+          color: $grafit-color;
+          margin-left: 45px;
+          padding-right: 5px;
+        }
+        & a {
+          color: $main-color;
+          letter-spacing: 0.82px;
+        }
+      }
+    }
+    &-image > img{
+      height: 238px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    &-description p{
+      font-size: 14px;
+      letter-spacing: 0.54px;
+      color: $grafit-color;
+    }
+    &-author{
+      @include flex-start-center;
+      margin-bottom: 25px;
+      & > img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+      & h4{
+        color: $main-color;
+        font-size: 18px;
+        letter-spacing: 1.14px;
+        margin-bottom: 0;
+      }
+      & span{
+        color: $grafit-color;
+        font-size: 12px;
+        letter-spacing: 0.46px;
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 7px;
+    }
+    &-title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 20px;
+    }
+    &-bage{
+      margin-left: auto;
+      background: $main-color;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      @include flex-center-center;
+      color: #fff;
+    }
+    &-info{
+      display: flex;
+      align-items: flex-start;
+    }
+    &-link{
+      display: flex;
+    }
+  }
+  &-diary{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    &-empty{
+      margin-bottom: 30px;
+      height: 335px;
+      text-align: center;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      padding: 27px 27px 40px;
+      @include flex-vertical-between;
+
+    }
+    &-btn{
+      @include blue-btn;
+      margin: 20px auto 0;
+    }
+    &-title{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 20px;
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+    }
+    &-item{
+      @include flex-between-center;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.23);
+      &:last-child{
+        border: 0;
+      }
+      & span{
+        font-size: 14px;
+        letter-spacing: 0.54px;
+        color: $grafit-color;
+        display: inline-block;
+        margin-right: 40px;
+      }
+      & a{
+        font-size: 14px;
+        letter-spacing: 0.54px;
+        color: $main-color;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px){
+  .header-log-wrapp{
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .header-notification{
+    margin-top: 15px;
+    flex-direction: column;
+    &-title{
+      font-size: 12px;
+      letter-spacing: 0.46px;
+      color: #3F4C55;
+      margin-right: auto;
+      position: absolute;
+      top: 37px;
+      right: 10px;
+    }
+    &-icon{
+      position: absolute;
+      top: -2px;
+      right: 10px;
+    }
+  }
+  .admin{
+    &-left{
+      width: 100%;
+    }
+    &-link-nav{
+      padding: 20px 0px;
+    }
+    &-card{
+      position: relative;
+      padding: 27px;
+      &-dream{
+        flex-direction: column;
+        &-item{
+          margin-bottom: 0px;
+        }
+        & > div{
+          width: 100%;
+        }
+      }
+      &-bage{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+      }
+      &-info {
+        justify-content: center;
+        align-items: center;
+        & img{
+          margin:0px;
+        }
+      }
+      &-name{
+        text-align: center;
+      }
+      &-birth{
+        text-align: center;
+      }
+    }
+    &-wrapp{
+      flex-direction: column;
+    }
+    &-card-info{
+      flex-direction: column;
+    }
+    &-school{
+      padding: 27px;
+      &-video{
+        &-item{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        &-title{
+          text-align: center;
+        }
+      }
+    }
+    &-walk{
+      padding: 27px;
+      &-place{
+        flex-direction: column;
+        justify-content: flex-start;
+        & > img{
+          margin-right: auto;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &-right{
+      width: 100%;
+    }
+    &-social{
+      padding: 15px;
+      &-dialog > span{
+        font-weight: lighter;
+        font-size: 10px;
+      }
+      &-title{
+        width: 90%;
+        font-size: 25px;
+      }
+      &-icon{
+        margin:auto;
+      }
+      &-wrapp-icon{
+        margin-left: 0px;
+        & span{
+          margin-left: 0px;
+        }
+      }
+      &-dialog-content{
+        margin-bottom: 0px;
+        & > span{
+          font-size: 13px;
+          letter-spacing: 0.3px;
+          line-height: 1.3;
+          font-weight: 400;
+        }
+        & > p{
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &-diary{
+      padding: 27px;
+      &-item > a{
+        margin-left: auto;
+      }
+    }
+    &-menu-on{
+      top: 100%;
+    }
+    & > img{
+      margin:0px 20px 0px 0px;
+    }
+  }
+  .worksheet{
+    padding: 27px;
+    &-history{
+      padding: 27px;
+      width: 100%;
+    }
+    &-wrapp{
+      flex-direction: column;
+    }
+  }
+  .pre-footer-prof-item{
+    width: 50%;
+  }
+}
+@media screen and (max-width:991px){
+  .admin-school-video-title > p {
+    margin-bottom: 0px;
+  }
+  .rate-place-card{
+    width: 100%;
+    padding: 27px;
+    top:0%;
+    border-radius: 0px;
+    height: 100%;
+  }
+  .career-map-frame{
+    width: 100%;
+  }
+  .career-card-reg{
+    width: 100%;
+    padding: 27px;
+    top:0%;
+    border-radius: 0px;
+  }
+  .career-add{
+    margin:20px 0px 20px auto;
+  }
+  .complaint-card{
+    width: 100%;
+    border-radius: 0px;
+    height: 100%;
+    top:0%;
+    padding: 27px;
+  }
+  .log-in-form{
+    padding: 27px;
+  }
+  .pre-footer-prof > a{
+    margin:0 auto;
+  }
+  .pre-footer-line{
+    display: none;
+  }
+  .pre-footer-share{
+    margin-bottom: 40px;
+  }
+  .pre-footer-mentor{
+    margin-bottom: 30px;
+  }
+  .pre-footer-mentor > h2{
+    margin-bottom: 15px;
+  }
+  .video-all-card{
+    width: 100%;
+  }
+  .tape-content{
+    padding: 0px;
+  }
+  .admin-lasheader-wrapper{
+    flex-direction: column;
+  }
+  .admin-history-with-child{
+    flex-direction: column;
+    & p {
+      justify-content: flex-start;
+      letter-spacing: 1px;
+    }
+  }
+  .admin-log-head{
+    margin-bottom: 15px;
+  }
+  .admin-log{
+    padding: 40px 0px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px){
+  .admin-card-info{
+    flex-direction:column;
+    position: relative;
+  }
+  .admin-card-bage{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+  .pre-footer-wrapp{
+    flex-wrap: nowrap;
+  }
+  .pre-footer-prof-item{
+    width: 55%;
+  }
+  .tape-content{
+    padding: 0px;
+  }
+}

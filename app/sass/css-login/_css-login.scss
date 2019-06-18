@@ -1,0 +1,68 @@
+.css-login{
+  padding: 85px 0;
+  height: 910px;
+  position: relative;
+  z-index: 1;
+  &::before{
+    background-image: url(../img/green-cube.svg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  &-line{
+    width: 100%;
+    height: 1px;
+    background: rgba(151, 151, 151, 0.23);
+    margin-bottom: 18px;
+  }
+  &-wrapp{
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    & h2{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      margin-bottom: 30px;
+    }
+  }
+  &-form{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    padding: 70px 60px 25px;
+    & input{
+      display: block;
+      width: 100%;
+      border-radius: 2px;
+      background-color: #E2EDF0;
+      border:none;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      color: #aaaaaa;
+      font-size: 15px;	letter-spacing: 0.15px;
+    }
+    & > a{
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      color: $css-color;
+      text-decoration: underline;
+    }
+  }
+  & button{
+    @include green-btn;
+    border:0;
+    margin: 30px auto 50px;
+    display: block;
+    width: 150px;
+    height: 45px;
+
+  }
+}

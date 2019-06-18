@@ -1,0 +1,112 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        .container
+            section.material
+                h2 Матеріали для закладів
+
+                .material-doc
+                    .material-block-left
+                        .material-blue-doc
+                            img(src='img/book.svg')
+                            p Законодавча база
+                            p Методологія
+                            p Договори
+                            p Література
+
+                    .material-block-right
+                        .material-block-one
+                            p
+                                | Закон України стосовно соціального захисту дітей-сиріт
+                                br
+                                |  та дітей, позбавлених батьківського піклування
+                                br
+                                | (про Наставництво)
+
+                            .material-download
+                                a(href='', target='_blank')
+                                    img(src='img/download.svg', alt='')
+                                    span Завантажити
+
+                        .material-block-two
+                            p Положення про Наставництво
+
+                            .material-download
+                                a(href='', target='_blank')
+                                    img(src='img/download.svg', alt='')
+                                    span Завантажити
+
+                        .material-block-three
+                            p
+                                | Методичні рекомендації з реалізації програми
+                                br
+                                |  наставництва над дітьми
+
+                            .material-download
+                                a(href='', target='_blank')
+                                    img(src='img/download.svg', alt='')
+                                    span Завантажити
+
+                        .material-block-four
+                            p Крок за кроком 2 видання
+
+                            .material-download
+                                a(href='', target='_blank')
+                                    img(src='img/download.svg', alt='')
+                                    span Завантажити
+
+                .material-video
+                    .material-block-left
+                        .material-blue-video
+                            img(src='img/video.svg')
+                            p
+                                | Проведення
+                                br
+                                |  презентації
+                                br
+                                |  наставництва
+                                br
+                                | для дитини
+
+
+                    .material-block-right
+                        .material-block-frame
+                            iframe(width='640', height='420', src='https://www.youtube.com/embed/rReXd742OUE', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+
+                        .material-download-video
+                            a(href='', target='_blank')
+                                img(src='img/download.svg', alt='')
+                                span Завантажити
+
+
+
+                .material-license
+                    .material-block-left
+                        .material-blue-license
+                            img(src='img/license.svg')
+                            p
+                                | Підписання
+                                br
+                                |  договору
+
+                    .material-block-right
+                        .material-block-license
+                            p
+                                | Типовий договір про наставництво
+                                br
+                                | (між Наставником, Закладом та ЦСССДМ)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    include ../templates/footer-log.pug

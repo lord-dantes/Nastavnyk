@@ -1,0 +1,40 @@
+extends ../default.pug
+block pageContent
+	include ../templates/header-green
+	.container.background-dating-relative
+		div.background-dating
+		.row
+			.col-md-2
+			.col-md-8
+				h2.title-dating  Давай знайомитися!
+				div.form-dating-subtitle-input Оберіть свій Центр із списку:
+				form.form-dating(action="POST")
+					input.form-dating-search(type="text" placeholder="Виберіть установу або ведіть її назву тут")
+					div.form-dating-box-items
+						ul.form-dating-items
+							li.form-dating-item Lorem ipsum.1
+							li.form-dating-item Lorem ipsum.2
+							li.form-dating-item Lorem ipsum.3
+							li.form-dating-item Lorem ipsum.4
+					div.form-dating-wrapper-link
+						a.link-dating-for-input(href="#") Немає h
+						div.form-dating-modal
+							span.form-dating-modal-closed X
+							div.form-dating-subtitle-input Перевірте контактні данні Центра та при необхідності виправте
+							input.form-dating-input(type="text" placeholder="Місто")
+							input.form-dating-input(type="text" placeholder="Адреса")
+							input.form-dating-input(type="text" placeholder="Контактні телефони")
+							input.form-dating-button(type="button" value="Зберегти")
+						.form-dating-modal_background
+					div.form-dating-subtitle-input Перевірте контактні данні Центра та при необхідності виправте
+					input.form-dating-input(type="text" placeholder="Місто")
+					input.form-dating-input(type="text" placeholder="Адреса")
+					input.form-dating-input.last-input(type="text" placeholder="Контактні телефони")
+					div.form-dating-subtitle-input Контактні данні співробітника, що контактує з Наставниками
+						span (Ви завжди можете змінити цю інформацію)
+					input.form-dating-input(type="text" placeholder="ПIБ")
+					input.form-dating-input(type="text" placeholder="Контактні телефони")
+					input.form-dating-input.last-input(type="text" placeholder="Email")
+					input.form-dating-button(type="button" value="Зберегти")
+			.col-md-2
+	include ../templates/css-footer-log

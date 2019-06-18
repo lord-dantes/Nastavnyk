@@ -1,0 +1,176 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.volunteer
+            .container
+                .volunteer-wellcome
+                    img(src='img/baby-book.jpg')
+                    .volunteer-wellcome-title
+                        h2 Вітаємо на сторінці волонтерів!
+                        p
+                            | Якщо ти з якоїсь причини не можеш стати наставником, але бажаєш допомогти Наставництву ще якимось чином,
+                            br
+                            span в тебе є така можливість:
+                        a( href='#be-volunteer' rel='relativeanchor') Стати волонтером
+
+        section.volunteer-blue-block
+            .container
+                .volunteer-blue-wrapp
+                    .volunteer-blue-title
+                        h3 Хто такий волонтер наставництва?
+                        p
+                            | “Це людина, яка будь-яким чином
+                            br
+                            | допомагає наставництву, але при цьому
+                            br
+                            | може не бути Наставником”
+
+                    img(src='img/question-three.svg')
+
+        section.volunteer-stage
+            .container
+                h2 Наприклад?
+                .volunteer-stage-globe
+                    .volunteer-stage-item
+                        h5 популяризація
+                        p
+                            | Дітям потрібно, щоб про Наставництво дізнавалося якомога
+                            br
+                            |  більше людей. Що, ти не маркетолог? Цього і не потрібно,
+                            br
+                            |  адже зробити перепост в соц. мережі, або просто розповісти
+                            br
+                            |   друзям чи колегам про Наставництво може кожен.
+
+                    .volunteer-img-globe
+                        .volunteer-img-item
+                            img(src='img/crystal-ball.png')
+
+                .volunteer-stage-master
+                    .volunteer-img-master
+                        .volunteer-img-item
+                            img(src='img/antenna.png')
+
+                    .volunteer-stage-item
+                        h5 Провести майстер-клас
+                        p
+                            | Ти вмієш щось робити і можеш навчити цьому дітей, супер!
+                            br
+                            | А якщо це пов'язано з якоюсь професією, - ще краще.
+                            br
+                            |   Наприклад, це можуть бути майстер-класи з кулінарного
+                            br
+                            |  мистецтва, пошиття будь чого, поробки з деревени, тощо.
+                            br
+                            |  Поміркуй, ти дійсно можеш чьогось навчити дитину.
+
+
+                .volunteer-stage-vacant
+                    .volunteer-stage-item
+                        h5 ознайомити з професією
+                        p
+                            | Якщо в тебе є можливість запросити дитину з Наставником
+                            br
+                            |  до себе на робоче місце і показати чим ти займаєшься,
+                            br
+                            |  чудово! Для дитини така годинка може бути вирішальною
+                            br
+                            | в житті, і допоможе їй обрати професію.
+
+
+                    .volunteer-img-vacant
+                        .volunteer-img-item
+                            img(src='img/wallet.png')
+
+                .volunteer-stage-finanse
+                    .volunteer-img-finanse
+                        .volunteer-img-item
+                            img(src='img/stethoscope.png')
+
+                    .volunteer-stage-item
+                        h5 Фінансова підтримка
+                        p
+                            | Нажаль, далеко не всі процеси Наставництва ще
+                            br
+                            |  фінансуються державою. Якщо в тебе є бажання, ти можеш
+                            br
+                            |  одноразово, або час від часу перераховувати гроші на
+                            br
+                            |  потреби Наставництва.
+
+
+        section.volunteer-idea
+            .container
+                .volunteer-idea-wrapp
+                    img(src='img/lightbulb.svg')
+                    .volunteer-idea-title
+                        span
+                            | В тебе є інша ідея того, як Ти
+                            br
+                            | можеш допомогти Наставництву?
+                        p З радістю її почуємо!
+
+        section.volunteer-form
+            .container
+                h2#be-volunteer Приєднатися до волонтерів:
+                .volunteer-form-card
+                    .volunteer-form-left
+                        p Обери, що ти можеш робити:
+                        .video-all-check
+                            input#box1.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box1') Займатись популяризацією Наставництва
+                        .video-all-check
+                            input#box2.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box2') Проводити майстер-класи
+                        input(type='text' placeholder='Вкажи які саме')
+                        .video-all-check
+                            input#box3.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box3') Познайомити дитину зі своєю професією
+                        input(type='text' placeholder='Вкажи яка професія')
+                        input(type='text' placeholder='Назва компанії')
+                        input(type='text' placeholder='Адреса')
+                        .video-all-check
+                            input#box4.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box4') Фінансово підтримати Наставництво
+                        .video-all-check
+                            input#box5.with-font(type='checkbox', checked='checked')
+                            label.video-all-check-name(for='box5') Допомогти по іншому
+                        input(type='text' placeholder='Вкажи як саме')
+
+                    .volunteer-form-line
+                    .volunteer-form-right
+                        input(type='text' placeholder='Ім’я')
+                        input(type='text' placeholder='Прізвище')
+                        input(type='text' placeholder='Email')
+                        input(type='text' placeholder='Телефон')
+                        select(required='')
+                            option(value='') Обери своє місто
+                            option Дыня
+                            option Тыква
+                            option Кабачок
+                            option Баклажан
+                            option Патиссон
+                            option Огурец
+
+                        button Реєстрація
+                        .volunteer-form-vertical
+                        p
+                            | Реєструючись, Ви погоджуєтеся з
+                            a(href='')
+                                |  політикою
+                                br
+                                |  обробки персональних данних
+                            |  . Зверніть увагу,
+                            br
+                            |  що Ваші данні будуть передані третім особам:
+                            br
+                            |  Центрам соціальних служб, Громадським
+                            br
+                            |  організаціям та Наставникам Вашого міста.
+
+
+
+
+
+    include ../templates/footer-log.pug

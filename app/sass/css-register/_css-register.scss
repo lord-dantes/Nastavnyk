@@ -1,0 +1,103 @@
+.css-register{
+  padding: 30px 0;
+  &-wrapp{
+    position: relative;
+    background: url("../img/men.png")no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 671px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+      background-image: url(../img/green-cube.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  &-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  & h3{
+    text-align: center;
+    margin-bottom: 30px;
+    color: $grafit-color;
+    font-size: 24px;
+    letter-spacing: 1.16px;
+    font-weight: 400;
+    & span{
+      font-weight: 600;
+      font-size: 30px;
+    }
+  }
+  &-line{
+    height: 1px;
+    background: $light-blue;
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 95px;
+    right: 0;
+  }
+  &-form{
+    background: $white-color;
+    padding: 57px 70px 20px;
+    border-radius: 8px;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    position: relative;
+    width: 358px;
+    margin: 0 0 0 auto;
+    & input{
+      display: block;
+      border-radius: 2px;
+      background-color: $light-blue;
+      border: 0;
+      padding: 10px 22px;
+      margin-bottom: 12px;
+    }
+    & button{
+      @include green-btn;
+      border: none;
+      margin: 30px auto 60px;
+      width: 153px;
+      height: 45px;
+      display: block;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    & a{
+      display: block;
+      text-decoration: underline;
+      color: $css-color;
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+    & span{
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      color: $grafit-color;
+    }
+    & span a{
+      margin: 0 0 0 10px;
+      display: inline-block;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      color: $grafit-color;
+    }
+  }
+}

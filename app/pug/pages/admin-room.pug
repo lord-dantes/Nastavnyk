@@ -1,0 +1,177 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        section.admin-link-nav
+            .container
+              .admin-lasheader-wrapper
+                div
+                  a.admin-link(href='') Особистий кабінет наставника
+                  p.admin-link-title
+                      | Денис Сверидов
+                div.admin-history-with-child
+                  p #[span 3] роки дружби з вихованцем
+                  p #[span 112] зустрічей
+
+        section.admin
+            .container
+                .admin-wrapp
+                    .admin-left
+                        .admin-card
+                            .admin-card-info
+                                img(src='img/child-card.png', alt='')
+                                div
+                                    h2.admin-card-name
+                                        | Денис
+                                        br
+                                        | Сверидов
+                                    p.admin-card-birth Дата народження
+                                    p.admin-card-data
+                                        | 25.08.2004 
+                                        span.admin-card-age (14  років)
+                                a.admin-card-bage(href='')
+                                    i.fas.fa-pencil-alt
+
+                            .admin-card-line
+                            .admin-card-dream
+                                div
+                                    span.admin-card-dream-name Мрія
+                                    p.admin-card-dream-item Мріє поїхати у США
+                                    span.admin-card-dream-name Боїться
+                                    p.admin-card-dream-item Павуків, кажанів
+                                    span.admin-card-dream-name Ненавидить
+                                    p.admin-card-dream-item Залишатися один в дощь
+                                div
+                                    span.admin-card-dream-name Хочу стати
+                                    p.admin-card-dream-item Лікарем
+                                    span.admin-card-dream-name Любить
+                                    p.admin-card-dream-item Коли йому читають казки
+                            .admin-card-line
+                            .admin-card-post
+                                p Твоя задача не досягти якихось цілей, а допомогти дититні!
+                                a(href='id-card.html') Детальніше
+
+
+                        .admin-school
+                            h2.admin-school-title
+                                | Школа наставника
+                            .admin-school-line
+                            .admin-school-video
+                                .admin-school-video-item
+                                    img(src='', alt='')
+                                    .admin-school-video-title
+                                        p Тренінг наставників
+                                        a(href='video-see.html') Дивитись
+                                .admin-school-video-item
+                                    img(src='', alt='')
+                                    .admin-school-video-title
+                                        p Як впоратись з маніпуляцією дитини
+                                        a(href='video-see.html') Дивитись
+                            a(href='video-all.html') Всі відео
+
+
+
+                        .admin-walk
+                            h2.admin-walk-title
+                                | Що робити з вихованцем
+                            .admin-walk-line
+                            .admin-walk-wrapp
+                                .admin-walk-place
+                                    img(src='img/tiger.png', alt='')
+                                    .admin-walk-desc
+                                        h4 Відвідайте зоопарк
+                                        p
+                                            | Ви можете в процесі походу пограти
+                                            br
+                                            | у гру “на кого з людей схожі ці тварини”. Уважно прислухайтесь до відповідей дитини і задавайте уточнюючі запитання.
+                            a(href='') Ще поради
+
+                    .admin-right
+                        .admin-social
+                            .admin-social-info
+                                h2.admin-social-title
+                                    | Cтрічка новин
+                                    br
+                                    | співдружності наставників
+
+                                a.admin-social-bage(href='')
+                                    i.fas.fa-plus
+                            .admin-social-line
+                            .admin-social-author
+                                img(src='img/ava.png', alt='')
+                                div
+                                    h4 Ігор Петренко
+                                    span 24 хв тому
+                            .admin-social-description
+                                p
+                                    | Наша перша зустріч з вихованцем. Було спочатку страшно, але з першої секунди ми знайшли спільну мову і далі пішло “як по маслу”.  Початок покладено. Тепер найголовніше залишатися постійним, це для мене виклик, але я вірю, що впораюсь!
+                            .admin-social-image
+                                img(src='img/post.png', alt='')
+                                .admin-social-wrapp-icon
+                                    .admin-social-icon
+                                        span
+                                            i.far.fa-comment
+                                        a(href='') Коментарii (3)
+                                    .admin-social-icon
+                                        span
+                                            i.far.fa-thumbs-up
+                                        a(href='') (18)
+                            .admin-social-dialog-line
+                            .admin-social-dialog
+                                .admin-social-dialog-wrapp
+                                    img(src='img/women.jpg', alt='')
+                                    .admin-social-dialog-content
+                                        p Ганна Лазаренко
+                                        span Вітаю! Віримо що у вас все вдасться ! Чекаємо на добрі новини!
+                                span 30 хв тому
+
+                            .admin-social-dialog
+                                .admin-social-dialog-wrapp
+                                    img(src='img/women-two.jpg', alt='')
+                                    .admin-social-dialog-content
+                                        p Елена Романенко
+                                        span Ура! Тепер на тобі велика відповідальність!!
+                                span 7 хв тому
+
+                            .admin-social-dialog-line-btn
+                            a.admin-social-btn(href='tape-page.html') Відкрити всю ленту
+
+                        .admin-diary
+                            h2.admin-diary-title Щоденник зустрічей
+                            .admin-diary-line
+                            .admin-diary-wrapp
+                                .admin-diary-item
+                                    div
+                                        span 06.10.2018
+                                        span Гуляли в учереждении
+                                    a(href='') Детальніше >
+
+                                .admin-diary-item
+                                    div
+                                        span 06.10.2018
+                                        span Ходили в Зоопарк
+                                    a(href='') Детальніше >
+
+                                .admin-diary-item
+                                    div
+                                        span 06.10.2018
+                                        span Ходили в кино
+                                    a(href='') Детальніше >
+
+                            a.admin-diary-btn(href='diary.html') Усі зустрічі
+
+                        .admin-diary-empty
+                            div.w-100
+                                h2.admin-diary-title Щоденник зустрічей
+                                .admin-diary-line
+
+                            div
+                                a.diary-slider-frown
+                                    i.far.fa-frown
+                                    span Фото дня не завантажені
+
+                            div
+                                a.admin-diary-btn(href='diary.html') Додати зустріч
+
+    include ../templates/pre-footer-contact
+    include ../templates/footer-log.pug

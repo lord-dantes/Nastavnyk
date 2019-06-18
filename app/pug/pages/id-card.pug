@@ -1,0 +1,114 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        section.admin-link-nav
+            .container
+                a.admin-link(href='') Особистий кабінет наставника >
+                p.admin-link-title
+                    | Денис Сверидов
+
+        section.admin
+            .container
+                .admin-wrapp
+                    .admin-left
+                        .admin-card
+                            .admin-card-info
+                                img(src='img/child-card.png', alt='')
+                                div
+                                    h2.admin-card-name
+                                        | Денис
+                                        br
+                                        | Сверидов
+                                    p.admin-card-birth Дата народження
+                                    p.admin-card-data
+                                        | 25.08.2004
+                                        span.admin-card-age (14  років)
+                                a.admin-card-bage(href='id-card-settings.html')
+                                    i.fas.fa-pencil-alt
+
+                            .admin-card-line
+                            .admin-card-dream
+                                div
+                                    span.admin-card-dream-name Мрія
+                                    p.admin-card-dream-item Мріє поїхати у США
+                                    span.admin-card-dream-name Боїться
+                                    p.admin-card-dream-item Павуків, кажанів
+                                    span.admin-card-dream-name Ненавидить
+                                    p.admin-card-dream-item Залишатися один в дощь
+                                    span.admin-card-dream-name Інше
+                                    p.admin-card-dream-item Має сестру
+                                div
+                                    span.admin-card-dream-name Хочу стати
+                                    p.admin-card-dream-item Лікарем
+                                    span.admin-card-dream-name Любить
+                                    p.admin-card-dream-item Коли йому читають казки
+                                    span.admin-card-dream-name Сильні сторони
+                                    p.admin-card-dream-item Не виявлено
+                            .admin-card-line
+                            .admin-card-place
+                                span Установа:
+                                p Спеціальна школа-інтернат №15 для дітей з наслідками поліомієліту та церебральними паралічами м.Києва
+                            .admin-card-adress
+                                div
+                                    span Адреса:
+                                    p пр. Перемоги, 113 г. Киев
+
+                                div
+                                    span Телефони установи:
+                                    p (044) 450-92-55
+                                    p (044) 450-92-56
+                                    p (044) 450-92-57
+                    .admin-right
+                        .worksheet
+                            a.worksheet-bage(href='')
+                                i.fas.fa-plus
+                            .worksheet-input
+                                span Гігієна:
+                                p Відмовляється чистити зуби
+                            .worksheet-input
+                                span Що цій дитині допоможе бути самостійним:
+                                p Підтримка, навчання, робота
+                            .worksheet-input
+                                span Емоціанально стан дитини:
+                                p Нестабільний
+                            .worksheet-input
+                                span Навички спілкування:
+                                p Боїться незнайомих людей
+                            .worksheet-input
+                                span Як орієнтується в просторі (чи є проблеми):
+                                p Немає
+                            .worksheet-page
+                                a(href='') 1
+                                a(href='') 2
+                                a.active(href='') 3
+                                a(href='') 4
+                                a(href='') 5
+                .worksheet-history-page
+                    .worksheet-history
+                        h2 Коротка історія дитини
+                        .worksheet-line
+                        .worksheet-wrapp
+                            .worksheet-wrapp-img
+                                img(src='img/history.png', alt='')
+                                .setting-worksheet-img-link
+                                    a.setting-worksheet-left(href='')
+                                        i.fas.fa-angle-left
+                                    a.setting-worksheet-right(href='')
+                                        i.fas.fa-angle-right
+                            p
+                                | У дитячий будинок Денис потрапив ще зовсім маленький. Його з сестрою залишили в лікарні під опікою лікарів, які потім віддали їх в дитячий будинок, звідки їх розібрали по різним сім'ям. Денис опинився в родині двох жінок, що мали фізичні відносини один з одним, а також пристрасті до алкоголю. Згодом його привезли в психіатричну лікарню ім. Павлова, залишили і поїхали, попередньо обговоривши з лікарем який діагноз йому поставити і відповідну вартість. Переживши багато неприємних моментів в сім'ї і лікарні, Дениса переміщують в притулок на вул. Маяковського. Він був розлючений і готовий до війни.
+                                br
+                                br
+                                |        Після багатьох пережитих подій, за словами самого Дениса «ні любові ні довіри до людей в мені не було».
+                        a(href='') Доповнити історію
+
+
+
+
+
+
+
+
+    include ../templates/pre-footer-contact
+    include ../templates/footer-log.pug

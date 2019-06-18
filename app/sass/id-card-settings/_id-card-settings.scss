@@ -1,0 +1,347 @@
+.setting{
+  &-wrapp{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &-left{
+    width: 43%;
+  }
+  &-right{
+    width: 54%;
+  }
+  &-card{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    height: 100%;
+    &-icon{
+      padding-top: 10px;
+      margin-right: 26px;
+      text-align: center;
+      & .add-img{
+        width: 14px;
+        height: 14px;
+        border-radius: 50px;
+        background: $main-color;
+        @include flex-center-center;
+        color: #fff;
+        font-size: 8px;
+        cursor: pointer;
+      }
+      & .delete-img{
+        color: $main-color;
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+    &-dream{
+      display: flex;
+      justify-content: space-between;
+      &-left{
+        width: 49%;
+      }
+      &-right{
+        width: 49%;
+      }
+      &-name{
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.33px;
+        color:$grafit-color;
+      }
+      &-item{
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        line-height: 20px;
+        color: $grafit-color;
+        margin-bottom: 25px;
+        display: block;
+        border: 0;
+        width: 100%;
+        word-break: break-word;
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 18px;
+    }
+    &-bage{
+      margin-left: auto;
+      background: #368CCA;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      color: #fff;
+      @include flex-center-center;
+    }
+    &-data{
+      & > input{
+        font-size: 14px;
+        letter-spacing: 0.46px;
+        margin-bottom: 0;
+        color: $grafit-color;
+        border: 0;
+      }
+    }
+    &-birth{
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0.33px;
+      margin-bottom: 4px;
+      color: $grafit-color;
+    }
+    &-name{
+      width: 200px;
+      & > input{
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $grafit-color;
+        border: 0;
+      }
+      & >::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #eee;
+        font-weight: 400;
+      }
+    }
+    &-info{
+      @include flex-start-center;
+      align-items: initial;
+      margin-bottom: 30px;
+      & > img{
+        width: 110px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 10px;
+      }
+    }
+    &-place{
+      margin-bottom: 35px;
+      & > span{
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        color: $main-color;
+        margin-bottom: 5px;
+        display: block;
+      }
+      & > p{
+        font-size: 12px;
+        letter-spacing: 0.56px;
+        color: $grafit-color;
+      }
+    }
+    &-adress{
+      display: flex;
+      justify-content: flex-start;
+      & > div:first-child{
+        margin-right: 20px;
+      }
+      & p{
+        font-size: 12px;
+        letter-spacing: 0.56px;
+        color: $grafit-color;
+        margin-bottom: 0;
+      }
+      & span{
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        color: $main-color;
+        margin-bottom: 5px;
+        display: block;
+      }
+    }
+  }
+}
+.setting{
+  &-worksheet{
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 27px 27px 27px 55px;
+    &-img{
+      margin-right: 10px;
+      width: 177px;
+      height: 220px;
+      & img{
+        width: 177px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 2px;
+      }
+      &-link{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        & > a{
+          display: block;
+          color: $main-color;
+          font-size: 15px;
+          margin-left: 10px;
+        }
+      }
+    }
+    &-input{
+      margin-bottom: 22px;
+    }
+    &-clear{
+      background: $white-color;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      @include flex-center-center;
+      color: $main-color;
+      box-shadow: 0 1px 5px 0 rgba(0,0,0,0.4);
+      &:hover{
+        box-shadow: 0 0 5px 1px $main-color;
+        color: $main-color;
+      }
+    }
+    &-header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    &-title{
+      display: block;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      color: $grafit-color;
+      font-weight: 500;
+      border: 0;
+    }
+    &-item{
+      border: 0;
+      border-radius: 8px;
+      background: $main-color;
+      padding: 20px 35px;
+      width: 100%;
+      color: $white-color;
+      &-new{
+        border: 0;
+        border-radius: 8px;
+        background-color: #E2EDF0;
+        padding: 20px 35px;
+        width: 100%;
+        color: $grafit-color;
+        font-weight: 500;
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $grafit-color;
+        }
+      }
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+      }
+    }
+    &-sett{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 22px;
+    }
+    &-wrapp{
+      display: flex;
+      margin-bottom: 25px;
+      & > textarea{
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        color: $grafit-color;
+        margin-bottom: 0;
+        width: 75%;
+        border: 0;
+        resize: none;
+      }
+      & > p{
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        color: $grafit-color;
+        margin-bottom: 0;
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 35px;
+    }
+    &-history{
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      padding: 45px 100px 60px;
+      margin-bottom: 100px;
+      width: 900px;
+      &-page{
+        position: relative;
+        z-index: 1;
+        padding: 20px 0;
+        &::before{
+          position: absolute;
+          content: '';
+          right: 0;
+          bottom: 30px;
+          z-index: -1;
+          background: url(../img/history-bg.png) no-repeat;
+          width: 100%;
+          height: 100%;
+          background-size: 75%;
+          background-position: right center;
+        }
+      }
+      & > a{
+        @include blue-btn;
+        margin-left: auto;
+      }
+      & h2{
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $grafit-color;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    &-page{
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      & > a{
+        margin: 0 10px;
+        color: $main-color;
+        font-size: 15px;
+        &.active{
+          font-weight: bold;
+        }
+      }
+    }
+    &-bage{
+      background: #368CCA;
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      color: #fff;
+      @include flex-center-center;
+      margin-left: 5px;
+    }
+  }
+}
+
+.setting-select {
+  margin-bottom: 20px;
+  & .js-example-basic-single{
+    width: 100%;
+  }
+  & .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: $grafit-color;
+    font-size: 13px;
+    letter-spacing: 0.9px;
+  }
+}
+
+
+

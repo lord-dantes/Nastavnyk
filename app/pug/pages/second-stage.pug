@@ -1,0 +1,134 @@
+extends ../default.pug
+block pageContent
+		include ../templates/header.pug
+		.content
+				section.second-stage
+						.container
+								h2 Дякую за бажання стати Наставником для дитини
+								.first-stage-wrapp
+										.stage-panel-two#stage
+												//- img(src='img/family.svg', alt='')
+												span(data-name="1").stage-panel-start.stage-active
+														| 1. Зареєструватися
+														br
+														|  в ЦССССДМ
+												span(data-name="2").stage-panel-next.stage-active
+														| 2. Зібрати пакет
+														br
+														| документів
+												//- .stage-panel-active До наступного кроку
+												span(data-name="3").stage-panel-last.stage-active 3. Пройти навчання
+												span(data-name="4").stage-panel-finish.stage-active
+														| 4. Знайомство з дитиною,
+														br
+														|  підписання договору
+
+										.first-stage-info
+											section(data-name="1" id="section1" class="text-item")
+												.first-stage-btn(data-name="1" id="section1" class="text-item") Зареєструйся в ЦССССДМ
+												p(data-name="1" id="section1" class="text-item") 1. Звернися в Центр соціальних служб в твоєму районі:
+												div.first-stage-form_box(data-name="1" id="section1" class="text-item")
+													p.first-stage-form_box-title Твої дані передані до Центру соц. служб. Подзвони та домовся про зустріч
+													input.form-dating-search(type="text" placeholder="Введіть назву міста")
+													div.form-dating-box-items
+														ul.form-dating-items
+															li.form-dating-item Lorem ipsum.1
+															li.form-dating-item Lorem ipsum.2
+															li.form-dating-item Lorem ipsum.3
+															li.form-dating-item Lorem ipsum.4
+													div.first-stage-result_box
+														div
+															p Телефон
+															p +38 (063) 222 22 12
+															p +38 (063) 222 22 12
+														div
+															p Адреса
+															p м. Львів, вул. Богдана Божка 12
+											section(data-name="2" id="section2" class="text-item")
+												.first-stage-btn(data-name="2" id="section2" class="text-item") Збери пакет документів
+												p(data-name="2" id="section2" class="text-item")
+														| 1. Звернися в твоє регіональне відділення Міністерства
+														br
+														|  внутрішніх справ для отримання довідки про несудимість
+														br
+														|  або
+														a(href='https://dpvs.hsc.gov.ua/' target="_blank")  замов її Online.
+														|   Знайди контактні дані на карті:
+												input(data-name="2" id="section2" class="text-item" type='text' placeholder='Введіть вашу адресу, щоб знайти відділення поблизу')
+
+												.first-stage-map(data-name="2" id="section2" class="text-item")
+														iframe(data-name="2" id="section2" class="text-item" src='https://www.google.com/maps/embed?pb', width='100%', height='100%', frameborder='8px', style='border:0', allowfullscreen='')
+
+												p(data-name="2" id="section2" class="text-item")
+														| 2. Пройди медогляд. Якщо тобі не дали форму для
+														br
+														| огляду, то ти можеш її завантажити тут:
+
+												.first-stage-doc(data-name="2" id="section2" class="text-item")
+														a(data-name="2" id="section2" class="text-item" href='http://zakon.rada.gov.ua/laws/file/text/7/f272713n437.doc' target='_blank')
+																img(data-name="2" id="section2" class="text-item" src='img/download.svg', alt='')
+																span(data-name="2" id="section2" class="text-item") Завантажити
+
+
+												p(data-name="2" id="section2" class="text-item") 3. Віднеси зібрані документи в Центр соціальних служб:
+												.first-stage-subt(data-name="2" id="section2" class="text-item")
+														span(data-name="2" id="section2" class="text-item") 1. Довідка про несудимість
+														span(data-name="2" id="section2" class="text-item") 2. Висновок про стан здоров'я
+														span(data-name="2" id="section2" class="text-item") 3. Копiя паспорта
+
+											section(data-name="3" id="section3" class="text-item")
+												.first-stage-btn(data-name="3" id="section3" class="text-item") Крок 2. Підготовка до зустрічі
+
+												p(data-name="3" id="section3" class="text-item")
+														| 1. Пройди співбесіду з психологом Центру
+														br
+														| соціальних служб
+
+												.first-stage-social(data-name="3" id="section3" class="text-item")
+														p
+																| Запишися на співбесіду з психологом, а також, дізнайся
+																br
+																|  коли ти зможеш пройти тренінг для наставників
+														.first-stage-line
+														.first-stage-social-wrapp
+																img(src='img/old-phone.svg', alt='')
+																.first-stage-social-info
+																		p Контакти
+																		p +38 (063) 222 12 12
+																		p +38 (063) 222 12 12
+																		.first-stage-social-mail
+																				span nastavniki@gmail.com
+																				span info_nasta@gmail.com
+
+												p(data-name="3" id="section3" class="text-item")
+														| 2. Пройди тренінг для наставників.
+														br
+														| Його тривалість 4 дня
+
+												.first-stage-license(data-name="3" id="section3" class="text-item")
+														p Підтвердіть що ви пройшли тренінг
+														.first-stage-line-license
+														span
+																| Для цього введить свій ліцензійний номер
+																br
+																|  виданий Центром соціальних Служб:
+														input(type='text')
+														button Підтвердити
+											section(data-name="4" id="section4" class="text-item")
+												.first-stage-btn(data-name="4" id="section4" class="text-item") Крок 3. Зустріч
+
+												p.mb-3(data-name="4" id="section4" class="text-item") 1. Знайомство з дитиною
+												p(data-name="4" id="section4" class="text-item")
+														| 2. Підписання договору.
+														br
+														| Ознайомся попередньо з договором
+												.first-stage-doc(data-name="4" id="section4" class="text-item")
+														a(href='' target='_blank')
+																img(src='img/download.svg', alt='')
+																span Завантажити
+
+
+
+
+
+		include ../templates/footer-log.pug

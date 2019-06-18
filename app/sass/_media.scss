@@ -1,0 +1,99 @@
+// header
+
+@import "header/header";
+@import "header-green/header-green";
+
+@import "header-log/header-log";
+@import "header-green-log/header-green-log";
+
+@import "header-admin/header-admin";
+@import "header-green-admin/header-green-admin";
+
+// content
+
+@import "index/index";
+
+
+@import "register-mentor/register-mentor";
+@import "register/register";
+@import "video-mentor/video-mentor";
+@import "admin-room/admin-room";
+@import "id-card/id-card";
+@import "tape-page/tape-page";
+@import "video-all/video-all";
+@import "video-see/video-see";
+@import "log-in/log-in";
+@import "id-card-settings/id-card-settings";
+
+@import "dating/dating";
+@import "diary/diary";
+@import "page-form/page-form";
+@import "stage/stage";
+@import "first-stage/first-stage";
+@import "second-stage/second-stage";
+@import "third-stage/third-stage";
+@import "contacts/contacts";
+
+@import "admin/admin";
+@import "about/about";
+@import "question/question";
+@import "career/career";
+@import "material/material";
+@import "volunteer/volunteer";
+@import "pre-footer/pre-footer";
+@import "pre-footer-contact/pre-footer-contact";
+
+
+
+
+@import "css-main/css-main";
+@import "css-mentor/css-mentor";
+@import "css-footer-log/css-footer-log";
+@import "css-admin/css-admin";
+@import "css-login/css-login";
+@import "css-register/css-register";
+@import "css-video-mentor/css-video-mentor";
+@import "css-material/css-material";
+@import "css-social/css-social";
+@import "css-team/css-team";
+@import "css-dating/css-dating";
+@import "css-admin-two/css-admin-two";
+
+
+
+
+// gr-o
+@import "gr-o/gr-o-admin.scss";
+@import "gr-o/gr-o-mentor.scss";
+@import "gr-o/gr-o-css-admin.scss";
+@import "gr-o/gr-o-css-team.scss";
+@import "gr-o/gr-o-css-material.scss";
+
+
+
+
+// footer
+@import "footer/footer";
+@import "footer-log/footer-log";
+@import "footer-bar/foter-bar";
+
+
+
+
+@media (max-width: 1200px) {
+    @import "index/index-max-1200";
+}
+@media (max-width: 1024px) {
+    @import "index/index-max-1024";
+}
+@media (max-width: 992px) {
+    @import "index/index-max-992";
+}
+
+@media (max-width: 768px) {
+    @import "index/index-max-768";
+}
+
+@media (max-width: 576px) {
+    @import "index/index-max-576";
+}

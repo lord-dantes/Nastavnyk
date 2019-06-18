@@ -1,0 +1,73 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.third-stage
+            .container
+                h2  Дякую за бажання стати Наставником для дитини
+                .first-stage-wrapp
+                    .stage-panel-two
+                        img(src='img/family.svg', alt='')
+                        span.stage-panel-start
+                            | Зареєструватися
+                            br
+                            |  в ЦССССДМ
+                        span.stage-panel-next
+                            | Зібрати пакет
+                            br
+                            | документів
+                        span.stage-panel-last Пройти навчання
+                        .stage-panel-active До наступного кроку
+                        span.stage-panel-finish
+                            | Знайомство з дитиною,
+                            br
+                            |  підписання договору
+
+                    .first-stage-info
+                        .first-stage-license
+                            p Підтвердіть що ви пройшли тренінг
+                            .first-stage-line-license
+                            span
+                                | Для цього введить свій ліцензійний номер
+                                br
+                                |  виданий Центром соціальних Служб:
+                            input(type='text')
+                            button Підтвердити
+
+                        .first-stage-star
+                            span Оціни роботу центру соціальних служб:
+
+                        .rating-widget
+                            .rating-stars
+                                ul#stars.mb-0
+                                    li.star(data-value='1')
+                                        i.fa.fa-star.fa-fw
+                                    li.star(data-value='2')
+                                        i.fa.fa-star.fa-fw
+                                    li.star(data-value='3')
+                                        i.fa.fa-star.fa-fw
+                                    li.star(data-value='4')
+                                        i.fa.fa-star.fa-fw
+                                    li.star(data-value='5')
+                                        i.fa.fa-star.fa-fw
+
+
+                        p.mb-3 1. Знайомство з дитиною
+                            p
+                                | 2. Підписання договору.
+                                br
+                                | Ознайомся попередньо з договором
+                            .first-stage-doc
+                                a(href='' target='_blank')
+                                    img(src='img/download.svg', alt='')
+                                    span Завантажити
+
+
+
+
+
+
+
+
+
+    include ../templates/footer-log.pug

@@ -1,0 +1,41 @@
+.gr-o-{
+	&css-material-link a{
+		background-color: $gr-o-main;
+		&:hover{
+			box-shadow: 2px 5px 10px 0 $gr-o-main;
+		}
+	}
+	&css-material-title p span{
+		color:$gr-o-main;
+	}
+	&css-material &counter-numb{
+		color:$gr-o-main;
+	}
+	&css-block-one{
+		background:$gr-o-main;
+	}
+	&css-material-item a{
+		color:$gr-o-main;
+	}
+	&css-block-two{
+		background:$gr-o-main;
+	}
+	&css-block-three{
+		background:$gr-o-main;
+	}
+	&css-block-four{
+		background:$gr-o-main;
+	}
+	&css-block-five{
+		background:$gr-o-main;
+	}
+	&css-block-six{
+		background:$gr-o-main;
+	}
+	&css-block-seven{
+		background:$gr-o-main;
+	}
+	&css-material-video a{
+		color:$gr-o-main;
+	}
+}

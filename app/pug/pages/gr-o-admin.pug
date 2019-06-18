@@ -1,0 +1,254 @@
+extends ../default.pug
+block pageContent
+    include ../templates/gr-o-header-admin-two
+    .content.gr-o-content
+        .container
+            section.css-social
+                .css-social-main
+                    .css-social-info.gr-o-social-info
+                        .css-social-info-wrapp.gr-o-social-info-wrapp
+                            .css-social-link.gr-o-social-link
+                                a(href='css-main.html') Головна
+                                a(href='css-mentor.html') Наставники
+                                a(href='css-mentor.html') Пари
+                                a(href='css-social.html') Громадські організації
+                                a(href='css-material.html') Матеріали
+
+                            .css-social-title.gr-o-social-title
+                                p
+                                    | в інтернатних закладах
+                                    br
+                                    | україни перебуває
+                                    span  105 703 дітей
+
+                                .css.counter.gr-o.gr-o-counter
+                                    .counter-numb.gr-o-counter-numb 0
+                                    .counter-numb.gr-o-counter-numb 2
+                                    .counter-numb.gr-o-counter-numb 9
+                                    .counter-numb.gr-o-counter-numb 0
+                                span
+                                    | Дітей мають наставників
+                                    br
+                                    | (активно взаємодіють)
+        .css-main-stat.gr-o-main-stat
+            .container
+                .css-main-wrapp.gr-o-main-wrapp
+                    h2 Загальна статистика наставництва в Україні
+                    div.gr-o-wrapper-stat
+                        .css-main-item.gr-o-main-item
+                            p 153
+                            span
+                                | Виявили бажання
+                                br
+                                | стати наставником
+
+                        .css-main-item.gr-o-main-item
+                            p 59
+                            span
+                                | Пройшли інфо-
+                                br
+                                | зустріч
+                            .css-main-circle.gr-o-main-circle
+                                span 39%
+
+                        .css-main-item.gr-o-main-item
+                            p 57
+                            span
+                                | Пройшли консультацію
+                                br
+                                | у психолога
+                            .css-main-circle.gr-o-main-circle
+                                span 57%
+
+                    div
+                        .css-main-item.gr-o-main-item
+                            p 312
+                            span
+                                | Пройшли навчання
+                            .css-main-circle.gr-o-main-circle
+                                span 24%
+
+                        .css-main-item.gr-o-main-item
+                            p 137
+                            span
+                                | Отримали висновок
+                            .css-main-circle.gr-o-main-circle
+                                span 24%
+
+                        .css-main-item.gr-o-main-item
+                            p 37
+                            span
+                                | Підписали договір
+                                br
+                                | Стали наставниками
+                            .css-main-circle.gr-o-main-circle
+                                span 57%
+        section.gr-o-wrapper-map
+          .container
+            .gr-o-wrapper-features-stats
+              .row
+                .col-lg-12
+                  h2.gr-o-map-subtitle Програму наставництва впроваджують:
+                .col-lg-4
+                  .gr-o-features-item
+                    img(src="img/enterprise.svg")
+                    span.gr-o-features-item-number 346
+                  .gr-o-features-item-name Закладiв
+                .col-lg-4
+                  .gr-o-features-item
+                    img(src="img/hotel.svg")
+                    span.gr-o-features-item-number 796
+                  .gr-o-features-item-name ЦСССДМ
+                .col-lg-4
+                  .gr-o-features-item
+                    img(src="img/building.svg")
+                    span.gr-o-features-item-number.gr-o-spesnumber 33
+                  .gr-o-features-item-name Громадські #[br] організації
+            .row
+              .col-lg-12
+                h2.gr-o-map-subtitle-stats Статистика по областям
+              .col-lg-12
+                .gr-o-wrapper-map_svg
+                  include ../templates/maps-item.pug
+                  include ../../img/map.svg
+            .row
+              .col-lg-12
+                h2.gr-o-subtitle-all_stats Зведена таблиця по областям
+              .col-lg-12
+                .page-form-education.gr-o-page-form-stats
+                  .table-education.gr-o-table-stats
+                      .table-education-header.gr-o-table-stats-header
+                          .table-education-main.gr-o-table-stats-main Область
+                          .table-line
+                          .table-education-start.gr-o-table-stats-start Дітей в #[br] закладах
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
+                          .table-line
+                          .table-education-end.gr-o-table-stats-end Дітей з #[br]наставниками
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
+                          .table-line
+                          .table-education-end.gr-o-table-stats-end Наставників з #[br] висовками #[br] (за весь час)
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
+                          .table-line
+                          .table-education-special.gr-o-table-stats-special Наставників, які #[br] пройшли курс #[br] підготовки (за весь час)
+                            a(href="javascript:void(0)")
+                              img(src="img/exhange-arrow.svg", alt="")
+                      .table-education-line.gr-o-table-stats-line
+                          .table-education-name.gr-o-table-stats-name Вінницька
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
+                              div 100 /
+                                span.gr-o-table-stats-input_prossent 0,3%
+                          .table-education-input.gr-o-table-stats-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-inputlast
+                              div 100
+                      .table-education-line.gr-o-table-stats-line
+                          .table-education-name.gr-o-table-stats-name Волинська
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
+                              div 100 /
+                                span.gr-o-table-stats-input_prossent 0,27%
+                          .table-education-input.gr-o-table-stats-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-inputlast
+                              div 100
+                      .table-education-line.gr-o-table-stats-line.gr-o-table-stats-line-last
+                          .table-education-name.gr-o-table-stats-name Дніпровська
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-one-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-input.gr-o-table-two-input
+                              div 100 /
+                                span.gr-o-table-stats-input_prossent   0,32%
+                          .table-education-input.gr-o-table-stats-input
+                              div 100
+                          .table-education-input.gr-o-table-stats-inputlast
+                              div 100
+                div.gr-o-table-stats-links
+                  div.gr-o-table-stats-wrapper-all
+                    a(href="javascript:void(0);") Дивитися всі
+                  div.gr-o-table-stats-wrapper-download
+                    img(src='img/download.svg', alt='')
+                    a(href="#" download) Завантажити в Excel
+                    //- rating
+              .col-lg-7
+                .row
+                  .col-lg-12
+                    h2.gr-o-subtitle-all_stats Рейтинг ЦСССДМ з наставництва
+                  .col-lg-12
+                    .page-form-education.gr-o-page-form-stats
+                      .table-education.gr-o-table-stats
+                          .table-education-header.gr-o-table-stats-header.gr-o-table-stats-header-csssdm
+                              .table-education-main.gr-o-table-stats-main.gr-o-table-stats-main-csssdm Місце
+                              .table-line
+                              .table-education-start.gr-o-table-stats-start.gr-o-table-stats-start-csssdm ЦСССДМ
+                              .table-line
+                              .table-education-end.gr-o-table-stats-end.gr-o-table-stats-end-csssdm Бали
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 1
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Смілянський РЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 2
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Київський РЦСССДМ Голосіївський
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line.gr-o-table-stats-line-last
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 3
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Житомирський МЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                    div.gr-o-table-stats-links
+                      div.gr-o-table-stats-wrapper-all
+                        a(href="javascript:void(0);") Дивитися всі
+                      div.gr-o-table-stats-wrapper-download
+                        img(src='img/download.svg', alt='')
+                        a(href="#" download) Завантажити в Excel
+              .col-lg-7
+                .row
+                  .col-lg-12
+                    h2.gr-o-subtitle-all_stats Рейтинг установ по наставництву
+                  .col-lg-12
+                    .page-form-education.gr-o-page-form-stats
+                      .table-education.gr-o-table-stats
+                          .table-education-header.gr-o-table-stats-header.gr-o-table-stats-header-csssdm
+                              .table-education-main.gr-o-table-stats-main.gr-o-table-stats-main-csssdm Місце
+                              .table-line
+                              .table-education-start.gr-o-table-stats-start.gr-o-table-stats-start-csssdm ЦСССДМ
+                              .table-line
+                              .table-education-end.gr-o-table-stats-end.gr-o-table-stats-end-csssdm Бали
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 1
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Смілянський РЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 2
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Київський РЦСССДМ Голосіївський
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                          .table-education-line.gr-o-table-stats-line.gr-o-table-stats-line-last
+                              .table-education-name.gr-o-table-stats-name.gr-o-table-stats-name-csssdm 3
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-one-input.gr-o-table-one-input-csssdm
+                                  div Житомирський МЦСССДМ
+                              .table-education-input.gr-o-table-stats-input.gr-o-table-two-input.gr-o-table-two-input-csssdm
+                                  div 20,21
+                    div.gr-o-table-stats-links
+                      div.gr-o-table-stats-wrapper-all
+                        a(href="javascript:void(0);") Дивитися всі
+                      div.gr-o-table-stats-wrapper-download
+                        img(src='img/download.svg', alt='')
+                        a(href="#" download) Завантажити в Excel
+
+
+    include ../templates/gr-o-footer-log

@@ -1,0 +1,100 @@
+.about{
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+  &::before{
+    background-image: url(../img/hearth.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: 85%;
+    background-position: 0 100%;
+  }
+  & > h2{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.16px;
+    color: $grafit-color;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  &-card{
+    border-radius: 8px;
+    background-color: $white-color;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    padding: 100px 75px 130px;
+    width: 918px;
+    margin: 0 auto;
+    text-align: center;
+    & > p{
+      font-size: 15px;
+      letter-spacing: 1.34px;
+      color: $grafit-color;
+    }
+  }
+}
+@media screen and (max-width:767px){
+  .about-card{
+    padding: 27px;
+    width: 100%;
+  }
+  .career-search{
+    width: 100%;
+  }
+  .css-admin{
+    padding: 27px;
+  }
+  .css-admin-main{
+    flex-direction: column;
+  }
+  .css-admin-info{
+    flex-direction: column;
+  }
+  .css-admin-main-card{
+    width: 100%;
+    padding: 27px;
+  }
+  .css-admin-wrapp{
+    flex-direction: column;
+  }
+  .css-admin-card{
+    padding: 27px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .css-footer-wrapp{
+    flex-direction: column;
+  }
+  .css-footer-logo{
+    margin:0px;
+  }
+  .css-header-wrapp{
+    flex-direction: column;
+  }
+  .css-header-notification{
+    flex-direction: column;
+  }
+  .header-notification-title{
+    margin:0 auto;
+  }
+  .css-admin-life{
+    flex-direction: column;
+  }
+  .css-footer-nav-item{
+    margin:0px 15px;
+  }
+  .message{
+    margin-right: auto;
+  }
+  .css-header-notification > a{
+    margin:0 auto 0 0;
+  }
+  .css-admin::before{
+    content:none;
+  }
+}

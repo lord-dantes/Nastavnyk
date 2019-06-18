@@ -1,0 +1,24 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-green
+    .content
+        section.css-register
+            .container
+                .css-register-wrapp
+                    .css-register-content
+                        h3
+                            span Реєстрація
+                            br
+                            |  Перший крок
+                        .css-register-form
+                            form(action='')
+                                input(type='email', placeholder='User@gmail.com', required='')
+                                input(type='password', placeholder='Пароль', required='')
+                                input(type='password', placeholder='Підтвердіть пароль', required='')
+                                input(type='text', placeholder='Мастер-ключ', required='')
+                                button(type='subbmit') Далі
+                                .css-register-line
+                                a(href='video-mentor.html') Забули свій пароль?
+
+
+    include ../templates/css-footer-log

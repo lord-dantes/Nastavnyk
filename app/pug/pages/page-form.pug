@@ -1,0 +1,581 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.page-form
+            a#go-top(href='#')
+                i.fas.fa-arrow-alt-circle-up
+            .container
+                .page-form-title
+                    h2 Давай знайомитися!
+                    p Заповни обов’язкову анкету кандидата в наставники
+                    span
+                        | Велике прохання заповнити всі графи анкети, даючи найбільш повні відповіді на запитання.
+                        br
+                        | Це допоможе краще здійснити взаємодобір пари «дитина-наставник»
+
+                form(action='')
+                    h3 1. Загальні відомості:
+                    .page-form-register
+                        .page-form-register-left
+                            div
+                                span ПІБ
+                                input.alert-border(type='text' data-toggle="tooltip" data-placement="top" title="Tooltip on top")
+                            div
+                                span Дата народження та ваш вік
+                                input(type='text')
+                            div
+                                span Контактний телефон
+                                input(type='phone')
+                            div
+                                span Електронна адреса
+                                input(type='email')
+                            div
+                                label
+                                    input(type="file ")
+                         .page-form-register-right
+                            div
+                                span Національність/Громадянство
+                                input(type='text')
+                            div
+                                span Адреса фактичного місця проживання
+                                input.alert-border(type='text')
+                                .error-tooltip Заповни обов’язкову анкету
+                            div
+                                span Адреса реєстрації
+                                input(type='text')
+                            div
+                                span Віросповідання
+                                select
+                                    option Християнство
+                                    option Християнство
+                                    option Християнство
+                            .page-form-register-religion
+                                div
+                                    span Яку міську церкву ви відвідуєте?
+                                    input(type='text')
+                                div
+                                    span Як часто?
+                                    select.alert-border
+                                        option Раз на тиждень
+                                        option Раз на тиждень
+                                        option Раз на тиждень
+                                    .error-tooltip Заповни обов’язкову анкету
+
+                    h3 2. Стан здоров’я:
+                    .page-form-health
+                        span Як Ви оцінюєте свій стан здоров’я?
+                        input(type='text')
+                        span Чи маєте Ви серйозні захворювання?
+                        .page-form-check
+                            label.form-check
+                                input(type='radio', name='1', value='')
+                                span.form-check-label-md Так
+                            label.form-check
+                                input(type='radio', name='1', value='', checked='checked')
+                                span.form-check-label-md Hi
+
+                        span Чи перебуваєте Ви на обліку:
+                        .page-form-symptom
+                            .page-form-symptom-item
+                                p Нарколога
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='narco', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='narco', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                            .page-form-symptom-item
+                                p Психіатра
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='psixo', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='psixo', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                            .page-form-symptom-item
+                                p Фтизіатра
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='ftiz', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='ftiz', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                            .page-form-symptom-item
+                                p Терапевта
+                                .page-form-check-symptom
+                                    label.form-check
+                                        input(type='radio', name='tera', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='tera', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                        .page-form-symptom
+                            .page-form-symptom-item-new
+                                p Дерматовенеролога
+                                .page-form-check-symptom-new
+                                    label.form-check
+                                        input(type='radio', name='derm', value='')
+                                        span.form-check-label-sm Так
+                                    label.form-check
+                                        input(type='radio', name='derm', value='', checked='checked')
+                                        span.form-check-label-sm Hi
+
+                        .blue-title * Якщо так, то вкажіть назву медичної установи, термін перебування
+                        input.blue-title-input(type='text')
+
+                        span Чи є Ви ВІЛ-інфікованим?
+                            .page-form-check
+                                label.form-check
+                                    input(type='radio', name='asid', value='')
+                                    span.form-check-label-md Так
+                                label.form-check
+                                    input(type='radio', name='asid', value='', checked='checked')
+                                    span.form-check-label-md Hi
+
+                    h3 3. Освіта:
+                    .page-form-education
+                        .table-education
+                            .table-education-header
+                                .table-education-main Освіта
+                                .table-line
+                                .table-education-start Рік вступу
+                                .table-line
+                                .table-education-end Рік закінчення
+                                .table-line
+                                .table-education-special Отримана спеціальність, ступінь або інша кваліфікація
+                            .table-education-line
+                                .table-education-name Загальноосвітня школа
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input-last
+                                    input(type='text')
+                            .table-education-line
+                                .table-education-name Університет, інститут, технікум
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input-last
+                                    input(type='text')
+                            .table-education-line
+                                .table-education-name Додаткові курси, тренінги, семінари
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input-last
+                                    input(type='text')
+
+                            .table-education-line
+                                select.table-education-name(required='')
+                                    option.text-center(value='') Загальноосвітня школа
+                                    option Дыня
+                                    option Тыква
+                                    option Кабачок
+                                    option Баклажан
+                                    option Патиссон
+                                    option Огурец
+
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input
+                                    input(type='text')
+                                .table-education-input-last
+                                    input(type='text')
+                        div
+                           a(href='')
+                              i.fas.fa-plus
+                              span Додати строку
+
+                    .page-form-work
+                        h3 4. Працевлаштування:
+                        a(href='')
+                            i.fas.fa-plus
+                            span Додати строку
+
+                    .table-work
+                        .table-work-header
+                            .table-work-main Місце роботи на цей момент
+                            .table-line
+                            .table-work-start З (місяць, рік)
+                            .table-work-line-vert
+                            .table-work-end До (місяць, рік)
+                            .table-line
+                            .table-work-info Контактна інформація (телефон, адреса)
+                        .table-work-line
+                            .table-work-input-main
+                                input(type='text' placeholder='Введіть назву організації')
+                            .table-work-input-start
+                                input(type='text')
+                            .table-work-input-end
+                                input(type='text')
+                            .table-work-input-info
+                                input(type='text')
+
+                        .table-work-header
+                            .table-work-left Посада
+                            .table-line
+                            .table-work-top Виконувані обов’язки
+                            .table-line
+                            .table-work-right Причина звільнення
+                        .table-work-line
+                            .table-work-input-left
+                                input(type='text')
+                            .table-work-input-top
+                                input(type='text')
+                            .table-work-input-right
+                                input(type='text')
+
+                    .table-work
+                        .table-work-header
+                            .table-work-main Місце попередньої роботи
+                            .table-line
+                            .table-work-start З (місяць, рік)
+                            .table-work-line-vert
+                            .table-work-end До (місяць, рік)
+                            .table-line
+                            .table-work-info Контактна інформація (телефон, адреса)
+                        .table-work-line
+                            .table-work-input-main
+                                input(type='text' placeholder='Введіть назву організації')
+                            .table-work-input-start
+                                input(type='text')
+                            .table-work-input-end
+                                input(type='text')
+                            .table-work-input-info
+                                input(type='text')
+
+                        .table-work-header
+                            .table-work-left Посада
+                            .table-line
+                            .table-work-top Виконувані обов’язки
+                            .table-line
+                            .table-work-right Причина звільнення
+                        .table-work-line
+                            .table-work-input-left
+                                input(type='text')
+                            .table-work-input-top
+                                input(type='text')
+                            .table-work-input-right
+                                input(type='text')
+
+
+                h3 5. Інтереси, хобі
+                .page-form-hobby
+                    textarea(name='', id='', rows='3', placeholder='Чим ви любите займатися на дозвіллі?')
+
+
+                h3 6. Сімейний стан:
+                .page-form-family
+                    span Оберіть Ваш сімейний стан
+                    select
+                        option Одружений / одружена
+                        option Одружений / одружена
+                        option Одружений / одружена
+
+                .page-form-family-main
+                    span * Будь ласка, вкажіть членів вашої сім’ї
+                    a(href='')
+                        i.fas.fa-plus
+                        span Додати рядок
+
+                .table-family
+                    .table-family-header
+                        .table-family-title Ім’я
+                        .table-line
+                        .table-family-title Стать
+                        .table-line
+                        .table-family-title Вік
+                        .table-line
+                        .table-family-title
+                            | Характер сімейних стосунків
+                            br
+                            | (мати, сестра, син тощо)
+
+                    .table-family-line
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+
+                    .table-family-line
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+
+                    .table-family-line
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+                        .table-family-input
+                            input(type='text')
+
+                h3 7. Житлово-побутові умови:
+                .page-form-home
+                    p * Заповніть пункт 7, якщо передбачається відвідування вихованцем вашої домівки
+                    span Вкажіть, де Ви проживаєте на цей момент
+                    select
+                        option Приватний будинок
+                        option Приватний будинок
+                        option Приватний будинок
+
+                    .page-form-room
+                        .page-form-room-item
+                            span  Кількість кімнат
+                            input(type='text')
+
+                        .page-form-room-item
+                            span  Кількість осіб, які проживають в одній кімнаті
+                            input(type='text')
+
+                    span.page-form-room-name
+                        |Інформація про інших членів сім’ї, які проживають разом із вами
+                        br
+                        |(ПІБ, вік, сімейні стосунки)
+                    textarea.page-form-room-input(name='', rows='3')
+
+                    span.page-form-room-name
+                        | Чи є у вас домашні тварини? (Якщо так, то які саме?)
+                    textarea.page-form-room-input(name='', rows='3')
+
+                h3 8. Досвід роботи з дітьми:
+                .page-form-child-main
+                    span
+                        | * Будь ласка, вкажіть ваш поточний і попередній досвід роботи з дітьми
+                        br
+                        |(оплачувана робота, волонтерська діяльність тощо)
+                    a(href='')
+                        i.fas.fa-plus
+                        span Додати строку
+
+                .table-child
+                    .table-child-header
+                        .table-child-main Назва організації
+                        .table-line
+                        .table-child-start З (місяць, рік)
+                        .table-child-line-vert
+                        .table-child-end До (місяць, рік)
+                        .table-line
+                        .table-child-info Контактна інформація (телефон, адреса)
+                    .table-child-line
+                        .table-child-input-main
+                            input(type='text')
+                        .table-child-input-start
+                            input(type='text')
+                        .table-child-input-end
+                            input(type='text')
+                        .table-child-input-info
+                            input(type='text')
+
+                    .table-child-header
+                        .table-child-left Посада
+                        .table-line
+                        .table-child-top Виконувані обов’язки
+                        .table-line
+                        .table-child-right Вікова група дітей
+                    .table-child-line
+                        .table-child-input-left
+                            input(type='text')
+                        .table-child-input-top
+                            input(type='text')
+                        .table-child-input-right
+                            input(type='text')
+
+                h3 9. Чому ви хочете стати наставником?
+                textarea.page-form-input(name='', rows='3')
+
+                h3
+                    |10. Які якості вашого характеру, особливі знання, навички тощо, можуть, на вашу думку,
+                    br
+                    |допомогти становленню та розвитку дитини із закладу?
+                textarea.page-form-input(name='', rows='3')
+
+                h3 11. Як би ви описали (охарактеризували) самі себе?
+                textarea.page-form-input(name='', rows='3')
+
+                h3 12. Чому ви хочете допомагати дитині-сироті?
+                textarea.page-form-input(name='', rows='3')
+
+                h3 13. Які ваші очікування від дитини, з якою ви хочете взаємодіяти?
+                textarea.page-form-input(name='', rows='3' placeholder='Вік, стать, наскільки важливим для вас є характер дитини (зовнішній вигляд, поведінкові особливості)?')
+
+                h3 13.1. За яким напрямком наставництва ви би бажали допомагати дитині?
+                .page-form-wrapp
+                    .page-form-choice
+                        input#1.with-font(type='checkbox' checked='checked')
+                        label.page-form-choice-name(for='1') Напрям «Соціалізація»
+                    .page-form-choice
+                        input#2.with-font(type='checkbox' checked='checked')
+                        label.page-form-choice-name(for='2') Напрям «Профорієнтація»
+                    .page-form-choice
+                        input#3.with-font(type='checkbox')
+                        label.page-form-choice-name(for='3') Напрям «Допомога в навчанні»
+
+                h3 13.2. Як часто ви можете відвідувати дитину в закладі?
+                .page-form-wrapp
+                    label.form-check
+                        input(type='radio', name='1', value='', checked='checked')
+                        span.form-check-label-md 1 раз на тиждень
+                    label.form-check
+                        input(type='radio', name='1', value='')
+                        span.form-check-label-md 1 раз на 2 тижні
+                    label.form-check
+                        input(type='radio', name='1', value='')
+                        span.form-check-label-md 1 раз на місяць
+                    label.form-check
+                        input(type='radio', name='1', value='')
+                        span.form-check-label-md Інше
+
+                    input(type='text')
+
+                h3 13.3. Чи згодні ви взаємодіяти з дитиною, яка має інвалідність?
+                .page-form-wrapp
+                    .page-form-check
+                        label.form-check
+                            input(type='radio', name='2', value='')
+                            span.form-check-label-md Так
+                        label.form-check
+                            input(type='radio', name='2', value='', checked='checked')
+                            span.form-check-label-md Hi
+
+                h3
+                    |14. З метою дотримання прав та інтересів дитини (серед іншого її безпеки і здорового розвитку),
+                    br
+                    | ми просимо вас повідомити нам таке:
+
+                h3 14.1. Чи вживаєте ви:
+                .page-form-wrapp
+                    p - Алкоголь
+                    .page-form-wrapp-item
+                        label.form-check
+                            input(type='radio', name='3', value='')
+                            span.form-check-label-md Так
+                        label.form-check
+                            input(type='radio', name='3', value='', checked='checked')
+                            span.form-check-label-md Hi
+
+                    span Якщо так, вкажіть, як часто?
+                    input(type='text')
+
+                    p - Тютюнові вироби
+                        .page-form-wrapp-item
+                            label.form-check
+                                input(type='radio', name='4', value='')
+                                span.form-check-label-md Так
+                            label.form-check
+                                input(type='radio', name='4', value='', checked='checked')
+                                span.form-check-label-md Hi
+
+                    p - Психотропні речовини
+                        .page-form-wrapp-item
+                            label.form-check
+                                input(type='radio', name='5', value='')
+                                span.form-check-label-md Так
+                            label.form-check
+                                input(type='radio', name='5', value='', checked='checked')
+                                span.form-check-label-md Hi
+
+                        span Якщо так, вкажіть, як часто?
+                        input(type='text')
+
+                h3 14.2. Чи вживали ви наркотики?
+                .page-form-wrapp
+                    .page-form-wrapp-item
+                        label.form-check
+                            input(type='radio', name='6', value='')
+                            span.form-check-label-md Так
+                        label.form-check
+                            input(type='radio', name='6', value='', checked='checked')
+                            span.form-check-label-md Hi
+
+                    span Якщо так, вкажіть, як часто?
+                    input(type='text')
+
+                h3
+                 |14.3. Чи були ви засуджені за злочини, пов’язані з приниженням людської гідності,
+                 br
+                 |залученням дітей до незаконної діяльності, жорстоким поводженням з дітьми,
+                 br
+                 |сексуальними посяганнями будь-якого роду, зневагою дитини тощо?
+
+                .page-form-wrapp
+                    .page-form-wrapp-item
+                        label.form-check
+                            input(type='radio', name='7', value='')
+                            span.form-check-label-md Так
+                        label.form-check
+                            input(type='radio', name='7', value='', checked='checked')
+                            span.form-check-label-md Hi
+
+                    span Якщо так, будь ласка, поясніть
+                    input(type='text')
+
+                h3 14.4. Чи були ви раніше позбавлені батьківських або опікунських прав?
+                .page-form-wrapp
+                    .page-form-wrapp-item
+                        label.form-check
+                            input(type='radio', name='8', value='')
+                            span.form-check-label-md Так
+                        label.form-check
+                            input(type='radio', name='8', value='', checked='checked')
+                            span.form-check-label-md Hi
+
+                    span Якщо так, будь ласка, конкретизуйте
+                    input(type='text')
+
+                h3
+                    |15. Чи дозволяєте ви використовувати ваші фотографії і коментарі, зроблені в процесі вашої
+                    br
+                    | участі в програмі, на інформаційних носіях, з метою популяризації ідеї наставництва?
+                .page-form-wrapp
+                    .page-form-wrapp-item
+                        label.form-check
+                            input(type='radio', name='9', value='')
+                            span.form-check-label-md Так
+                        label.form-check
+                            input(type='radio', name='9', value='', checked='checked')
+                            span.form-check-label-md Hi
+
+                h3 16. Звідки ви дізналися про програму наставництва?
+                .page-form-select
+                    select
+                        option Facebook або інші соціальні мережі
+                        option Facebook або інші соціальні мережі
+                        option Facebook або інші соціальні мережі
+
+                h3
+                 |17. В який робочий день та час Вам зручніше всього прийти на консультацію з психологом
+                 br
+                 | Центру соціальних служб або Партнерської організації?
+                .page-form-wrapp
+                    input(type='text')
+
+
+                button(type='submit') Зберегти
+                a(href='stage.html') page-stage
+
+
+
+    include ../templates/footer-log.pug

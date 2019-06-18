@@ -1,0 +1,36 @@
+.css{
+  &-header{
+    &-company{
+      margin-left: 70px;
+      display: flex;
+      align-items: center;
+      & > span{
+        color: $grafit-color;
+        font-size: 12px;
+        letter-spacing: 0.46px;
+        line-height: 1.1;
+        display: block;
+        margin-left: 15px;
+      }
+    }
+    &-notification{
+      display: flex;
+      align-items: center;
+      & > a > i{
+        color: $css-color;
+        font-size: 20px;
+      }
+    }
+    &-wrapp{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-log{
+      font-family: $second-font;
+      box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+      padding: 15px 0;
+      z-index: 2;
+    }
+  }
+}

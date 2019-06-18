@@ -1,0 +1,151 @@
+.register{
+  padding: 75px 0;
+  position: relative;
+  z-index: 1;
+  &::before{
+    background-image: url("../img/bg-register.png");
+    background-repeat: no-repeat;
+    background-position:center center;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  &-wrapp{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  &-line{
+    height: 1px;
+    background: $light-blue;
+    width: 300px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+    right: 0;
+  }
+  & h2{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.16px;
+    text-align: center;
+    color: $grafit-color;
+    margin-bottom: 50px;
+  }
+  &-block-left{
+    & > img{
+      width: 290px;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+      margin-bottom: 35px;
+    }
+    & > p{
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.83px;
+      line-height: 31px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    & > span{
+      color: $main-color;
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      text-align: center;
+      display: block;
+    }
+  }
+  &-block-center{
+    margin: 0 50px 0 33px;
+    & > img{
+      width: 356px;
+      height: 222px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+      margin-bottom: 40px;
+    }
+    & > span{
+      text-align: center;
+      display: block;
+      font-size: 15px;
+      letter-spacing: 1.14px;
+    }
+  }
+  &-block-right{
+    width: 370px;
+    background: $white-color;
+    padding: 57px 70px 20px;
+    border-radius: 8px;
+    box-shadow: -2px -1px 9px 0 rgba(0,0,0,0.17);
+    position: relative;
+    & input{
+      display: block;
+      border-radius: 2px;
+      background-color: $light-blue;
+      border: 0;
+      padding: 10px 22px;
+      margin-bottom: 12px;
+    }
+    & button{
+      @include blue-btn;
+      border: none;
+      margin: 22px auto;
+      width: 153px;
+      height: 45px;
+      display: block;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    & a{
+      display: block;
+      text-decoration: underline;
+      color: $main-color;
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+    & span{
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      color: $grafit-color;
+    }
+    & span a{
+      margin: 0 0 0 10px;
+      display: inline-block;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      color: $grafit-color;
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  .register-wrapp{
+    flex-direction: column;
+  }
+  .register-block-center{
+    margin:0px;
+    & > img{
+      width: 100%;
+    }
+  }
+  .register-block-center{
+    margin-bottom: 20px;
+  }
+  .register-block-right{
+    padding: 27px;
+    width: 100%;
+  }
+}

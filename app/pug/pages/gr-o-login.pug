@@ -1,0 +1,21 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-purple-log.pug
+    .content
+        section.css-login.gr-o-login
+            .container
+                h2
+                  | Увійти в кабінет Міністерства
+                  br
+                  | Соціальної Політики
+                .css-login-wrapp.gr-o-login-wrapp
+                    .css-login-form
+                        form(action='')
+                            input(type='email', placeholder='Логiн', required='')
+                            input(type='password', placeholder='Пароль', required='')
+                            button(type='submit') Увійти
+                        .css-login-line
+                        a(href='admin-room.html') Забули свій пароль?
+
+
+    include ../templates/gr-o-footer-log.pug

@@ -1,0 +1,307 @@
+.material{
+  padding: 100px 0;
+  &-download{
+    @include flex-end-center;
+    & > a{
+     @include flex-center-center;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 15px;
+      letter-spacing: 0.83px;
+      & > img{
+        width: 20px;
+        margin-left: 20px;
+      }
+      & > span{
+        display: block;
+        margin-left: 10px;
+      }
+    }
+  }
+  &-download-video{
+    @include flex-start-center;
+    & > a{
+      @include flex-center-center;
+      color: $main-color;
+      text-decoration: underline;
+      font-size: 15px;
+      letter-spacing: 0.83px;
+      & > img{
+        width: 20px;
+        margin-left: 40px;
+      }
+      & > span{
+        display: block;
+        margin-left: 10px;
+      }
+    }
+  }
+  & > h2{
+    margin-bottom: 70px;
+    text-align: center;
+    color: $grafit-color;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.16px
+  }
+  &-block{
+    &-license{
+      & > p{
+        font-size: 20px;
+        letter-spacing: 1.11px;
+        margin-bottom: 0;
+        line-height: 1.2;
+        margin-left: 90px;
+      }
+    }
+    &-one{
+      position: relative;
+      margin: 45px 0 80px;
+      &::before{
+        position: absolute;
+        content: '1';
+        bottom: -25px;
+        left: -50px;
+        opacity: 0.3;
+        color: #E2EDF0;
+        font-family: $second-font;
+        font-size: 144px;
+        letter-spacing: 1.14px;
+
+      }
+      & > p{
+        font-size: 20px;
+        letter-spacing: 1.11px;
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+    }
+    &-two{
+      position: relative;
+      margin-bottom: 95px;
+      &::before{
+        position: absolute;
+        content: '2';
+        bottom: -75px;
+        left: -50px;
+        opacity: 0.3;
+        color: #E2EDF0;
+        font-family: $second-font;
+        font-size: 144px;
+        letter-spacing: 1.14px;
+      }
+      & > p{
+        font-size: 20px;
+        letter-spacing: 1.11px;
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+    }
+    &-three{
+       position: relative;
+       margin-bottom: 130px;
+       &::before{
+         position: absolute;
+         content: '3';
+         bottom: -75px;
+         left: -50px;
+         opacity: 0.3;
+         color: #E2EDF0;
+         font-family: $second-font;
+         font-size: 144px;
+         letter-spacing: 1.14px;
+       }
+       & > p{
+         font-size: 20px;
+         letter-spacing: 1.11px;
+         margin-bottom: 0;
+         line-height: 1.2;
+       }
+     }
+    &-four{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '4';
+        bottom: -75px;
+        left: -50px;
+        opacity: 0.3;
+        color: #E2EDF0;
+        font-family: $second-font;
+        font-size: 144px;
+        letter-spacing: 1.14px;
+      }
+      & > p{
+        font-size: 20px;
+        letter-spacing: 1.11px;
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+    }
+    &-left{
+      margin-right: 90px;
+    }
+    &-right{
+      width: 650px;
+    }
+    &-frame{
+      margin-bottom: 35px;
+    }
+  }
+  &-doc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &-video{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &-license{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-blue{
+    &-license{
+      background: $main-color;
+      border-radius: 8px;
+      padding: 60px 0 75px;
+      width: 380px;
+      & > img{
+        width: 65px;
+        display: block;
+        margin: 0 auto 40px;
+      }
+      & > p{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.33px;
+        color: $white-color;
+        text-align: center;
+      }
+    }
+    &-video{
+      background: $main-color;
+      border-radius: 8px;
+      padding: 95px 0 117px;
+      width: 380px;
+      & > img{
+        width: 78px;
+        display: block;
+        margin: 0 auto 40px;
+      }
+      & > p{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.33px;
+        color: $white-color;
+        text-align: center;
+      }
+    }
+    &-doc{
+      background: $main-color;
+      border-radius: 8px;
+      padding: 45px 0;
+      width: 380px;
+      & > img{
+        width: 70px;
+        display: block;
+        margin: 0 auto 45px;
+      }
+      & > p{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1.33px;
+        color: $white-color;
+        text-align: center;
+        margin-bottom: 100px;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: '';
+          width: 2px;
+          height: 80px;
+          left: 50%;
+          background: url(../img/stage-line-panel.png);
+          background-repeat: repeat;
+          top: 50px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+          &::before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:767px){
+  .material-doc{
+    flex-direction: column;
+  }
+  .material-block-right{
+    width: 100%;
+  }
+  .material-video{
+    flex-direction: column;
+  }
+  .material-block-frame > iframe{
+    width: 100%;
+  }
+  .material-blue-video{
+    width: 100%;
+    margin:15px 0px;
+  }
+  .material-license{
+    flex-direction: column;
+  }
+  .material-block-left{
+    margin: 0px;
+    width: 100%;
+  }
+  .material-license{
+    width: 100%;
+  }
+  .material-blue-license{
+    width: 100%;
+  }
+  .material-blue-doc{
+    width: 100%;
+  }
+  .material-block-license > p{
+    margin:10px 0px;
+    font-size: 16px;
+  }
+  .material-block-one{
+    margin: 25px 0px;
+  }
+  .material-block-two{
+    margin:25px 0px;
+  }
+  .material-block-one > p{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .material-block-two > p{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .material-block-three > p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .material-block-three{
+    margin:25px 0px;
+  }
+  .material-block-four{
+    margin:25px 0px;
+  }
+  .material-block-four > p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}

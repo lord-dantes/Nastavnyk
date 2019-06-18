@@ -1,0 +1,144 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        section.admin-link-nav
+            .container
+                a.admin-link(href='') Особистий кабінет наставника >
+                p.admin-link-title
+                    | Денис Сверидов
+
+        section.tape
+            .container
+                h2.tape-title Стрічка новин співдружності наставників
+                .tape-wrapp
+                    a.tape-bage(href='')
+                        i.fas.fa-plus
+                    .tape-content
+                        .tape-add
+                            .tape-add-wrapp
+                                .tape-author
+                                    img(src='img/ava.png', alt='')
+                                .tape-add-content
+                                    textarea(name='', id='', rows='5', placeholder='Напишіть Вашу новину тут')
+                                    .tape-add-img
+                                        label(tabindex='0', for='file')
+                                            i.fas.fa-camera
+                                            span Додати фото
+                                        p.tape-add-img-name
+                                        input#file(type='file', name='inputFile', required='')
+
+                            button.tape-add-btn Поділитися
+
+                        hr
+
+
+                        .tape-edit
+                            .tape-author
+                                .tape-author-head
+                                    .tape-author-left
+                                        img(src='img/ava.png', alt='')
+                                        div
+                                            h4 Ігор Петренко
+                                            span 24 хв тому
+                                    .tape-author-right
+                                        .tape-author-right-wrapp
+                                            a.tape-bage-ok(href='' title='Submit')
+                                                i.fas.fa-check
+                            .tape-description
+                                textarea(name='', rows='5', placeholder='Напишіть Вашу новину тут')
+
+                            .tape-image
+                                img(src='img/post2.jpg', alt='')
+                                .tape-wrapp-icon-edit
+                                    .tape-wrapp-icon-img
+                                        label.tape-bage-img(for='files')
+                                            i.fas.fa-camera
+                                            span Змінити фото
+                                        input#files(style='display:none;', type='file')
+
+
+                        hr
+                            
+
+                        .tape-page-wrapp
+                            .tape-author
+                                .tape-author-head
+                                    .tape-author-left
+                                        img(src='img/ava.png', alt='')
+                                        div
+                                            h4 Ігор Петренко
+                                            span 24 хв тому
+                                    .tape-author-right
+                                        .tape-author-right-wrapp
+                                            a.tape-bage-edit(href='' title='Edit')
+                                                i.fas.fa-pencil-alt
+                                            //- a.tape-bage-trash(href='' title='Delete')
+                                            //-     i.fas.fa-trash
+                            .tape-description
+                                p
+                                    | Наша перша зустріч з вихованцем. Було спочатку страшно, але з першої секунди ми знайшли спільну мову і далі пішло “як по маслу”.  Початок покладено. Тепер найголовніше залишатися постійним, це для мене виклик, але я вірю, що впораюсь!
+                            .tape-image
+                                img(src='img/post2.jpg', alt='')
+                                .tape-wrapp-icon
+                                    .tape-social-icon
+                                        span
+                                            i.far.fa-comment
+                                        a(href='') Коментарii (3)
+                                    .tape-social-icon
+                                        span
+                                            i.far.fa-thumbs-up
+                                        a(href='') (18)
+                            .tape-line
+                            .tape-dialog
+                                .tape-dialog-wrapp
+                                    img(src='img/women.jpg', alt='')
+                                    .tape-dialog-content
+                                        .tape-dialog-header
+                                            p Ганна Лазаренко
+                                            span 23.01.2018
+                                        span Вітаю! Віримо що у вас все вдасться ! Чекаємо на добрі новини!
+
+                                .tape-dialog-wrapp
+                                    img(src='img/women.jpg', alt='')
+                                    .tape-dialog-content
+                                        .tape-dialog-header
+                                            p Ганна Лазаренко
+                                            span 7 хв тому
+                                        span Ура! Тепер на тобі велика відповідальність!!
+
+                                .tape-dialog-all-content
+                                    .tape-dialog-wrapp
+                                        img(src='img/women.jpg', alt='')
+                                        .tape-dialog-content
+                                            .tape-dialog-header
+                                                p Ганна Лазаренко
+                                                span 23.01.2018
+                                            span Вітаю! Віримо що у вас все вдасться ! Чекаємо на добрі новини!
+                                    .tape-dialog-wrapp
+                                        img(src='img/women.jpg', alt='')
+                                        .tape-dialog-content
+                                            .tape-dialog-header
+                                                p Ганна Лазаренко
+                                                span 23.01.2018
+                                            span Вітаю! Віримо що у вас все вдасться ! Чекаємо на добрі новини!
+                                    .tape-dialog-wrapp
+                                        img(src='img/women.jpg', alt='')
+                                        .tape-dialog-content
+                                            .tape-dialog-header
+                                                p Ганна Лазаренко
+                                                span 23.01.2018
+                                            span Вітаю! Віримо що у вас все вдасться ! Чекаємо на добрі новини!
+                                .tape-dialog-all
+                                    p Читати всі коментарі
+
+
+                                .tape-dialog-wrapp
+                                    img(src='img/ava.png', alt='')
+                                    .tape-dialog-content
+                                        textarea(name='text' placeholder='Залишити коментар')
+
+                                a.tape-dialog-btn(href='') Надіслати
+                                .tape-line
+    include ../templates/pre-footer-contact
+    include ../templates/footer-log.pug

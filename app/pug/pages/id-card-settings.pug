@@ -1,0 +1,153 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        section.admin-link-nav
+            .container
+                a.admin-link(href='') Особистий кабінет наставника >
+                p.admin-link-title
+                    | Денис Сверидов
+
+        section.setting
+            .container
+                .setting-wrapp
+                    .setting-left
+                        .setting-card
+                            .setting-card-info
+                                img(src='img/user.svg', alt='')
+                                .setting-card-icon
+                                    label.add-img(for='files')
+                                        i.fas.fa-plus
+                                    input#files(style='display:none;', type='file')
+
+                                    a.delete-img(href='' title='Delete image')
+                                        i.fas.fa-trash
+                                div
+                                    .setting-card-name
+                                        input(type='text', value='Денис' placeholder='Имя дитини')
+                                        input(type='text', value='Сверидов' placeholder='Фамилия')
+                                    p.setting-card-birth Дата народження
+                                    p.setting-card-data
+                                        input(type='text', value='25.08.2004' placeholder='день.месяц.год')
+                                        span.setting-card-age
+                                a.setting-card-bage(href='')
+                                    i.fas.fa-check
+
+                            .setting-card-line
+                            .setting-card-dream
+                                .setting-card-dream-left
+                                    span.setting-card-dream-name Мрія
+                                    input.setting-card-dream-item(type='text', value='Мріє поїхати у США' placeholder='Введіть текст тут')
+                                    span.setting-card-dream-name Боїться
+                                    input.setting-card-dream-item(type='text', value='Павуків, кажанів' placeholder='Введіть текст тут')
+                                    span.setting-card-dream-name Ненавидить
+                                    input.setting-card-dream-item(type='text', value='Залишатися один в дощь' placeholder='Введіть текст тут')
+                                    span.setting-card-dream-name Інше
+                                    input.setting-card-dream-item(type='text', value='Має сестру' placeholder='Введіть текст тут')
+                                .setting-card-dream-right
+                                    span.setting-card-dream-name Хочу стати
+                                    input.setting-card-dream-item(type='text', value='Лікарем' placeholder='Введіть текст тут')
+                                    span.setting-card-dream-name Любить
+                                    input.setting-card-dream-item(type='text', value='Коли йому читають казки' placeholder='Введіть текст тут')
+                                    span.setting-card-dream-name Сильні сторони
+                                    input.setting-card-dream-item(type='text', value='Не виявлено' placeholder='Введіть текст тут')
+                            .setting-card-line
+
+                            .setting-select
+                                select.js-example-basic-single(name='state')
+                                    option.setting-select-option(value='') Виберіть установу або ведіть її назву тут
+                                    option(value='AL') Alabama
+                                    option(value='WY') Wyoming
+
+
+
+                            .setting-card-place
+                                span Установа:
+                                p Спеціальна школа-інтернат №15 для дітей з наслідками поліомієліту та церебральними паралічами м.Києва
+                            .setting-card-adress
+                                div
+                                    span Адреса:
+                                    p пр. Перемоги, 113 г. Киев
+
+                                div
+                                    span Телефони установи:
+                                    p (044) 450-92-55
+                                    p (044) 450-92-56
+                                    p (044) 450-92-57
+                    .setting-right
+                        .setting-worksheet
+                            .setting-worksheet-sett
+                                a.setting-worksheet-bage(href='' title='Add')
+                                    i.fas.fa-plus
+                                a.setting-worksheet-bage(href='' title='Submit')
+                                    i.fas.fa-check
+
+
+                            .setting-worksheet-input
+                                .setting-worksheet-header
+                                    input.setting-worksheet-title(type='text', value='' placeholder='Введіть тему:')
+                                    a.setting-worksheet-clear(href='' title='Clear')
+                                        i.fas.fa-minus
+                                input.setting-worksheet-item-new(type='text', value='' placeholder='Введіть текст тут')
+                            .setting-worksheet-input
+                                .setting-worksheet-header
+                                    input.setting-worksheet-title(type='text', value='Гігієна:' placeholder='Введіть тему')
+                                    a.setting-worksheet-clear(href='' title='Clear')
+                                        i.fas.fa-minus
+                                input.setting-worksheet-item(type='text', value='Відмовляється чистити зуби' placeholder='Введіть текст тут')
+                            .setting-worksheet-input
+                                .setting-worksheet-header
+                                    input.setting-worksheet-title(type='text', value='Гігієна:' placeholder='Введіть тему')
+                                    a.setting-worksheet-clear(href='' title='Clear')
+                                        i.fas.fa-minus
+                                input.setting-worksheet-item(type='text', value='Відмовляється чистити зуби' placeholder='Введіть текст тут')
+                            .setting-worksheet-input
+                                .setting-worksheet-header
+                                    input.setting-worksheet-title(type='text', value='Гігієна:' placeholder='Введіть тему')
+                                    a.setting-worksheet-clear(href='' title='Clear')
+                                        i.fas.fa-minus
+                                input.setting-worksheet-item(type='text', value='Відмовляється чистити зуби' placeholder='Введіть текст тут')
+                            .setting-worksheet-input
+                                .setting-worksheet-header
+                                    input.setting-worksheet-title(type='text', value='Гігієна:' placeholder='Введіть тему')
+                                    a.setting-worksheet-clear(href='' title='Clear')
+                                        i.fas.fa-minus
+                                input.setting-worksheet-item(type='text', value='Відмовляється чистити зуби' placeholder='Введіть текст тут')
+
+
+                            .setting-worksheet-page
+                                a(href='') 1
+                                a(href='') 2
+                                a.active(href='') 3
+                                a(href='') 4
+                                a(href='') 5
+                .setting-worksheet-history-page
+                    .setting-worksheet-history
+                        h2 Коротка історія дитини
+                        .setting-worksheet-line
+                        .setting-worksheet-wrapp
+                            .setting-worksheet-img
+                                img(src='img/empty-img.png', alt='')
+                                .setting-worksheet-img-link
+                                    a.setting-worksheet-left(href='')
+                                        i.fas.fa-angle-left
+                                    a.setting-worksheet-right(href='')
+                                        i.fas.fa-angle-right
+
+
+                            .setting-card-icon
+                                label.add-img(for='files')
+                                    i.fas.fa-plus
+                                input#file(style='display:none;', type='file')
+                                a.delete-img(href='' title='Delete image')
+                                    i.fas.fa-trash
+
+
+                            textarea(rows='10', cols='45', name='text' placeholder="Ваша история")
+                                | У дитячий будинок Денис потрапив ще зовсім маленький. Його з сестрою залишили в лікарні під опікою лікарів, які потім віддали їх в дитячий будинок, звідки їх розібрали по різним сім'ям. Денис опинився в родині двох жінок, що мали фізичні відносини один з одним, а також пристрасті до алкоголю. Згодом його привезли в психіатричну лікарню ім. Павлова, залишили і поїхали, попередньо обговоривши з лікарем який діагноз йому поставити і відповідну вартість. Переживши багато неприємних моментів в сім'ї і лікарні, Дениса переміщують в притулок на вул. Маяковського. Він був розлючений і готовий до війни.
+                                | Після багатьох пережитих подій, за словами самого Дениса «ні любові ні довіри до людей в мені не було».
+                        a(href='') Доповнити історію
+
+
+    include ../templates/pre-footer-contact
+    include ../templates/footer-log.pug

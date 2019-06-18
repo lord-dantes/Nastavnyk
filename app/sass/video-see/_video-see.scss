@@ -1,0 +1,48 @@
+.video-see{
+  margin-bottom: 100px;
+  h2{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:$grafit-color;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &-frame{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &-download{
+    padding: 0 200px;
+    & p{
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: $main-color;
+      margin-bottom: 5px;
+    }
+    & a{
+      font-size: 15px;
+      letter-spacing: 0.83px;
+      color: $main-color;
+      display: inline-block;
+      margin-right: 35px;
+      text-decoration: underline;
+      & span{
+        color: #aaa;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px){
+  .video-see-iframe{
+    width: 100%;
+    height: 180px;
+  }
+  .video-see-download{
+    padding: 0 10px;
+  }
+  .video-see{
+    margin-bottom: 50px;
+  }
+}

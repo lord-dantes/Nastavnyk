@@ -1,0 +1,420 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-green-admin
+    .content
+        .container
+            section.css-social
+                .css-social-main
+                    .css-social-info
+                        .css-social-info-wrapp
+                            .css-social-link
+                                a(href='css-main.html') Головна
+                                a(href='css-mentor.html') Наставники
+                                a(href='css-social.html') Громадські організації
+                                a(href='css-material.html') Матеріали
+
+                            .css-social-title
+                                p
+                                    | в інтернатних закладах
+                                    br
+                                    | україни перебуває
+                                    span  105 703 дітей
+
+                                .css.counter
+                                    .counter-numb 0
+                                    .counter-numb 2
+                                    .counter-numb 9
+                                    .counter-numb 0
+                                span
+                                    | Дітей мають наставників
+                                    br
+                                    | (активно взаємодіють)
+
+                        .css-social-search
+                            img(src='img/search.svg')
+                            input(type='text' placeholder='Почніть вводити дані тут')
+
+                        .css-social-add
+                            i.fas.fa-plus
+                            span Додати Наставника
+
+                        .css-slip
+                            .css-slip-modal
+                                .css-slip-close ×
+                                .css-slip-main
+                                    .css-slip-image
+                                        img(src='img/empty-img.png', alt='')
+                                    .css-slip-icon
+                                        label.add-img(for='files' title='Add image')
+                                            i.fas.fa-plus
+                                        input#files(style='display:none;', type='file')
+                                        .css-del(title='Delete image')
+                                            i.fas.fa-trash
+                                    div
+                                        p Органзація
+                                        textarea.css-slip-input-name(rows='3' placeholder='Назва організації')
+                                        span Максимальна кількість пар:
+                                        input.css-slip-input-value(type='text')
+                                .css-line-modal
+                                .css-slip-choice
+                                    div
+                                        span Статус:
+                                        select.triangle-green
+                                            option Знаємо про її існування
+                                            option Знаємо про її існування
+                                            option Знаємо про її існування
+                                        span Телефон:
+                                        input(type='text')
+                                        span Email:
+                                        input(type='text')
+                                        span Адреса:
+                                        input(type='text')
+                                        span Сайт:
+                                        input(type='text')
+                                    div
+                                        span Передати пару:
+                                        select.triangle-green
+                                            option Покищо нікого не передавати
+                                            option Покищо нікого не передавати
+                                            option Покищо нікого не передавати
+                                        span Передати пару:
+                                        select.triangle-green
+                                            option Покищо нікого не передавати
+                                            option Покищо нікого не передавати
+                                            option Покищо нікого не передавати
+                                        span № Договору:
+                                        input(type='text')
+                                        button Зберегти
+
+
+
+                    .css-social-img
+                        img(src='img/babby-sleep.jpg')
+
+
+
+                .css-table
+                    .css-header
+                        .css-title-org Організація
+                            span.css-sort-mentor
+                                img(src='img/a-b.svg')
+                        .css-line
+                        .css-title-stat Статус
+                        .css-line
+                        .css-title-license Ліцензія ГО
+                        .css-line
+                        .css-title-val Кількість пар
+
+                    .css-table-block
+                        .css-block-org
+                            .css-block-title Допоможи дітям
+                                .help-info-org
+                                    span
+                                        | Переглянути інформацію
+                                        br
+                                        | організації.
+                            span.css-block-phone (063) 324 43 43
+                            span.css-block-img
+                                img(src='img/blue-tel.svg')
+                        .css-block-stat
+                            select.triangle-green(required='')
+                                option(value='') Знаємо про її існування
+                                option Домовленість про співпрацю
+                                option Підписаний договір
+                        .css-block-license
+                            span 45043
+                        .css-block-val
+                            span 0
+
+
+                .css-big-card
+                    .css-org
+                        .css-org-img
+                            img(src='img/logo-org.svg', alt='')
+                        .css-org-title
+                            h3 го
+                            p
+                                | Допоможи
+                                br
+                                | дітям
+                            .css-org-title-wrapp
+                                div
+                                    p 58
+                                    span
+                                        | пар
+                                        br
+                                        | максимально
+                                div
+                                    p 12
+                                    span
+                                        | пар
+                                        br
+                                        | всього
+                        .css-org-line
+                        .css-org-info
+                            span Телефон:
+                            p +38 (063) 234 12 11
+                            span Email:
+                            p helpchildren@gmail.com
+                            span Адреса:
+                            p  пр. Перемоги, 113 г. Киев
+                            span Сайт:
+                            a(href='') www.helpchildren.com
+                        .css-org-mentor
+                            span Передати пару:
+                            select.triangle-green
+                                option Марченко Марія
+                                option Марченко Марія
+                                option Марченко Марія
+                            span Передати всі пари інтерната:
+                            select.triangle-green
+                                option №32
+                                option №32
+                                option №32
+                            .css-org-doc
+                                div
+                                    span Номер договору:
+                                    p ДР-0112.1
+                                div
+                                    span Ліцензія:
+                                    p LOT-R 89
+                        .css-org-edit
+                            a(href='' title='Edit')
+                                i.fas.fa-pencil-alt
+
+
+
+                    // start  edit card
+                    .css-org
+                        .css-org-img-edit
+                            img(src='img/logo-org.svg', alt='')
+                        .css-org-icon
+                            label.add-img(for='files', title='Add image')
+                                i.fas.fa-plus
+                            input#files(style='display:none;', type='file')
+                            .css-del(title='Delete image')
+                                i.fas.fa-trash
+
+                        .css-org-title
+                            h3 го
+                            textarea(rows='3' placeholder='Назва організації')
+                            .css-org-title-wrapp
+                                div
+                                    input(type='text' placeholder='00')
+                                    span
+                                        | пар
+                                        br
+                                        | максимально
+                                div
+                                    input(type='text' placeholder='00')
+                                    span
+                                        | пар
+                                        br
+                                        | всього
+                        .css-org-line
+                        .css-org-info
+                            span Телефон:
+                            input(type='text')
+                            span Email:
+                            input(type='text')
+                            span Адреса:
+                            input(type='text')
+                            span Сайт:
+                            input(type='text')
+                        .css-org-mentor
+                            span Передати пару:
+                            select.triangle-green
+                                option Марченко Марія
+                                option Марченко Марія
+                                option Марченко Марія
+                            span Передати всі пари інтерната:
+                            select.triangle-green
+                                option №32
+                                option №32
+                                option №32
+                            .css-org-doc
+                                div
+                                    span Номер договору:
+                                    input(type='text')
+                                div
+                                    span Ліцензія:
+                                    input(type='text')
+                        .css-org-edit
+                            a(href='' title='Submit')
+                                i.fas.fa-check
+
+                    // end edit card
+
+
+                    .css-org-search
+                        img(src='img/search.svg')
+                        input(type='text', placeholder='Почніть вводити дані тут')
+
+                    .css-org-table
+                        .css-org-header
+                            .css-org-mentors Наставник
+                                span.css-org-sort-mentor
+                                    img(src='img/a-b.svg')
+                            .css-line
+                            .css-org-child Вихованець
+                                span.css-org-sort-child
+                                    img(src='img/a-b.svg')
+                            .css-line
+                            .css-org-place Заклад
+                            .css-line
+                            .css-org-contract
+                                | Номер
+                                br
+                                | договору
+                            .css-line
+                            .css-org-data
+                                | Дата початку
+                                br
+                                | наставництва
+
+
+                        .css-org-block
+                            .css-block-mentors
+                                .css-block-mentor-link
+                                    | Наставниченко
+                                    br
+                                    | Максим Петрович
+                                    .help-info-org
+                                        span
+                                            | Переглянути інформацію
+                                            br
+                                            | про наставника
+                                span.css-block-mentors-phone (063) 324 43 43
+                                span.css-block-sort-img
+                                    img(src='img/blue-tel.svg')
+
+                            .css-block-child
+                                a(href='css-team.html') Петренко Вікторія
+                                    .help-info-org
+                                        span
+                                            | Переглянути інформацію
+                                            br
+                                            |  про вихованеця
+                            .css-block-place
+                                span Інтернат 34
+                            .css-block-contract
+                                span К-123.1
+                            .css-block-data
+                                span 25.06.2017
+
+
+                        // start  modal mentor
+
+                        .social-modal
+                            .social-modal-card
+                                .social-info
+                                    .social-card-img
+                                        img(src='img/mentor.jpg', alt='')
+                                    .social-card-title
+                                        h2 Наставник
+                                        p
+                                            | Максим
+                                            br
+                                            | Пеcтров
+                                        span Дата народження
+                                        p 25.03.1993 (25  років)
+                                    .social-card-edit
+                                        i.fas.fa-pencil-alt
+                                    .social-card-close
+                                        i.fas.fa-times
+
+                                .social-card-line
+                                .social-card-stat
+                                    .social-card-wrapp
+                                        div
+                                            span Статус:
+                                            select.triangle-green
+                                                option Кандидат в наставники
+                                                option Кандидат в наставники
+                                                option Кандидат в наставники
+                                            span Телефон:
+                                            p +38 (063) 234 12 11
+                                            span Email:
+                                            p Maks12_1@gmail.com
+                                            span Адреса:
+                                            p пр. Перемоги, 113 г. Киев
+                                        div
+                                            span Відповідальний:
+                                            p РЦСССДМ
+                                            span Ліцензія:
+                                            p
+                                                | LOTR 89
+                                                a(href='')
+                                                    i.fas.fa-envelope
+                                                    span.social-card-bage
+                                                        | Натисни щоб
+                                                        br
+                                                        | надіслати ліцензію
+                                                        br
+                                                        | наставнику на Email
+                                            span Дата подачі анкети:
+                                            p 11 січня 2017 року
+                                            a(href='css-admin.html') Переглянути анкету
+
+                        // end modal mentor
+
+
+                        // start edit modal mentor
+                        //.social-modal
+                        //    .social-modal-card
+                        //        .social-info-edit
+                        //            .social-card-img-edit
+                        //                img(src='img/mentor.jpg', alt='')
+                        //            .social-card-icon
+                        //                label.add-img(for='files')
+                        //                    i.fas.fa-plus
+                        //                input#files(style='display:none;', type='file')
+                        //                a.delete-img(href='', title='Delete image')
+                        //                    i.fas.fa-trash
+                        //            .social-card-title
+                        //                h2 Наставник
+                        //                input.social-input-name(type='text' placeholder='Имя')
+                        //                input.social-input-surname(type='text' placeholder='Фамилия')
+                        //                span Дата народження
+                        //                input.social-input-birth(type='text')
+                        //            .social-card-edit
+                        //                i.fas.fa-check
+                        //            .social-card-close
+                        //                i.fas.fa-times
+                        //
+                        //        .social-card-line
+                        //        .social-card-stat
+                        //            .social-card-wrapp
+                        //                div
+                        //                    span Статус:
+                        //                    select.triangle-green
+                        //                        option Кандидат в наставники
+                        //                        option Кандидат в наставники
+                        //                        option Кандидат в наставники
+                        //                    span Телефон:
+                        //                    input(type='text')
+                        //                    span Email:
+                        //                    input(type='text')
+                        //                    span Адреса:
+                        //                    input(type='text')
+                        //                div
+                        //                    span Відповідальний:
+                        //                    select.triangle-green
+                        //                        option РЦСССДМ
+                        //                        option РЦСССДМ
+                        //                        option РЦСССДМ
+                        //                    span Ліцензія:
+                        //                    input(type='text')
+                        //                    span Дата подачі анкети:
+                        //                    input(type='text')
+                        // end edit modal mentor
+
+                    a.css-org-all(href='')
+                        span Дивитися всі
+
+                    .css-info * Щоб переглянути історію взаємодії наставника та вихованця натисніть на ім’я вихованця в таблиці.
+
+            a.css-social-all(href='')
+                span Дивитися всі
+
+    include ../templates/css-footer-log.pug

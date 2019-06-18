@@ -1,0 +1,615 @@
+extends ../default.pug
+block pageContent
+    include ../templates/gr-o-header-admin-two
+    .content
+        .container
+            section.css-mentor.gr-o-mentor
+                .css-mentor-main
+                    .css-mentor-info
+                        .css-mentor-info-wrapp
+                            .css-mentor-link.gr-o-mentor-link
+                                a(href='css-main.html') Головна
+                                a(href='css-mentor.html') Наставники
+                                a(href='css-social.html') Громадські організації
+                                a(href='css-material.html') Матеріали
+
+                            .css-mentor-title.gr-o-mentor-title
+                                p
+                                    | в інтернатних закладах
+                                    br
+                                    | україни перебуває
+                                    span  105 703 дітей
+
+                                .css.counter
+                                    .counter-numb.gr-o-counter-numb 0
+                                    .counter-numb.gr-o-counter-numb 2
+                                    .counter-numb.gr-o-counter-numb 9
+                                    .counter-numb.gr-o-counter-numb 0
+                                span
+                                    | Дітей мають наставників
+                                    br
+                                    | (активно взаємодіють)
+
+                        .css-mentor-search
+                            img(src='img/search.svg')
+                            input(type='text' placeholder='Почніть вводити дані тут')
+
+                        .css-mentor-add.gr-o-mentor-add
+                            i.fas.fa-plus
+                            span Додати Наставника
+
+
+
+                    .css-mentor-img
+                        img(src='img/baby-nice.jpg')
+
+
+                //- // start edit modal mentor
+                .social-modal
+                    .social-modal-card
+                        .social-info-edit
+                            .social-card-img-edit
+                                img(src='img/empty-img.png', alt='')
+                            .social-card-icon.gr-o-social-card-icon
+                                label.add-img(for='files')
+                                    i.fas.fa-plus
+                                input#files(style='display:none;', type='file')
+                                a.delete-img(href='', title='Delete image')
+                                    i.fas.fa-trash
+                            .social-card-title.gr-o-social-card-title
+                                h2 Наставник
+                                input.social-input-name(type='text' placeholder='Имя')
+                                input.social-input-surname(type='text' placeholder='Фамилия')
+                                span Дата народження
+                                input.social-input-birth(type='text')
+                            .social-card-edit.gr-o-social-card-edit
+                                i.fas.fa-check
+                            .social-card-close.gr-o-social-card-close
+                                i.fas.fa-times
+
+                        .social-card-line
+                        .social-card-stat
+                            .social-card-wrapp.gr-o-social-card-wrapp
+                                div
+                                    span Статус:
+                                    select.triangle-green.gr-o-triangle-purple
+                                        option Кандидат в наставники
+                                        option Кандидат в наставники
+                                        option Кандидат в наставники
+                                    span Телефон:
+                                    input(type='text')
+                                    span Email:
+                                    input(type='text')
+                                    span Адреса:
+                                    input(type='text')
+                                div
+                                    span Відповідальний:
+                                    select.triangle-green.gr-o-triangle-purple
+                                        option РЦСССДМ
+                                        option РЦСССДМ
+                                        option РЦСССДМ
+                                    span Ліцензія:
+                                    input(type='text')
+                                    span Дата подачі анкети:
+                                    input(type='text')
+                // end edit modal mentor
+
+                .css-table
+                    .css-table-header.gr-o-css-table-header
+                        .css-table-title-mentor Наставник
+                            span.sort-mentor
+                                img(src='img/a-b.svg')
+                        .css-table-line
+                        .css-table-title-stat Статус
+                        .css-table-line
+                        .css-table-title-license Ліцензія
+                        .css-table-line
+                        .css-table-title-doc
+                            | Наявність
+                            br
+                            | документів
+                        .css-table-line
+                        .css-table-title-respon Відповідальний
+
+                    .css-table-mentor-line
+                        .css-table-block-mentor
+                            span.mentor-title
+                                | Наставниченко
+                                br
+                                | Максим Петрович
+                            span.mentor-phone.gr-o-mentor-phone
+                                | (063) 324 43 43
+                            span.mentor-phone-img.gr-o-mentor-phone-img
+                                img(src='img/phone-purple.svg')
+                        .css-table-block-stat
+                            select.triangle-green.gr-o-triangle-purple(required='')
+                                option(value='') Кандидат в наст…
+                                option Дыня
+                                option Тыква
+                                option Кабачок
+                                option Баклажан
+                                option Патиссон
+                                option Огурец
+
+                        .css-table-block-license
+                            span LOTR 89
+                        .css-table-block-doc
+                            span Є всі
+                        .css-table-block-respon
+                            select.triangle-green.gr-o-triangle-purple(required='')
+                                option(value='') Выбрать
+                                option Дыня
+                                option Тыква
+                                option Кабачок
+                                option Баклажан
+                                option Патиссон
+                                option Огурец
+
+                    .css-card
+                        .css-card-wrapp
+                            // start card mentor
+                            .css-card-left
+                                .css-card-info
+                                    .css-card-img
+                                        img(src='img/mentor.jpg', alt='')
+                                    .css-card-title.gr-o-card-title
+                                        h2 Наставник
+                                        p
+                                            | Максим
+                                            br
+                                            | Пеcтров
+                                        span Дата народження
+                                        p 25.03.1993 (25  років)
+
+                                    .css-card-edit.gr-o-card-edit
+                                        a(href='', title='Edit')
+                                            i.fas.fa-pencil-alt
+                                .css-card-line
+
+                                .css-card-stat
+                                    .css-card-stat-wrapp.gr-o-card-stat-wrapp
+                                        div
+                                            span Статус:
+                                            select.triangle-green.gr-o-triangle-purple
+                                                option Кандидат в наставники
+                                                option Кандидат в наставники
+                                                option Кандидат в наставники
+
+                                            span Телефон:
+                                            p +38 (063) 234 12 11
+
+                                            span Email:
+                                            p Maks12_1@gmail.com
+
+                                            span Адреса:
+                                            p пр. Перемоги, 113 г. Киев
+
+                                        div
+                                            span Відповідальний:
+                                            p РЦСССДМ
+
+                                            span Ліцензія:
+                                            p
+                                                | LOTR 89
+                                                a(href='')
+                                                    i.fas.fa-envelope
+                                                    span.css-card-bage
+                                                        | Натисни щоб
+                                                        br
+                                                        | надіслати ліцензію
+                                                        br
+                                                        | наставнику на Email
+
+                                            span Дата подачі анкети:
+                                            p 11 січня 2017 року
+
+                                            a(href='css-admin.html') Переглянути анкету
+
+                            // end card mentor
+
+
+                            // start edit card mentor
+
+                            //.css-card-left
+                            //    .css-card-info
+                            //        .css-card-img
+                            //            img(src='img/mentor.jpg', alt='')
+                            //        .css-card-title
+                            //            h2 Наставник
+                            //            input.css-input-name(type='text' placeholder='Имя')
+                            //            input.css-input-prename(type='text' placeholder='Фамилия')
+                            //            span Дата народження
+                            //            input.css-input-birth(type='text' placeholder='дд.мм.гг')
+                            //
+                            //        .css-card-edit
+                            //            a(href='', title='Edit')
+                            //                i.fas.fa-check
+                            //    .css-card-line
+                            //
+                            //    .css-card-stat
+                            //        .css-card-stat-wrapp
+                            //            div
+                            //                span Статус:
+                            //                select.triangle-green
+                            //                    option Кандидат в наставники
+                            //                    option Кандидат в наставники
+                            //                    option Кандидат в наставники
+                            //
+                            //                span Телефон:
+                            //                input.css-input-card(type='text' placeholder='Ваш телефон')
+                            //
+                            //                span Email:
+                            //                input.css-input-card(type='text' placeholder='Ваш Email')
+                            //
+                            //                span Адреса:
+                            //                input.css-input-card(type='text' placeholder='Ваш адрес')
+                            //
+                            //            div
+                            //                span Відповідальний:
+                            //                select.triangle-green.css-input-card
+                            //                    option Кандидат в наставники
+                            //                    option Кандидат в наставники
+                            //                    option Кандидат в наставники
+                            //
+                            //
+                            //                span Ліцензія:
+                            //                input.css-input-card(type='text' placeholder='Номер лицензии')
+                            //
+                            //
+                            //                span Дата подачі анкети:
+                            //                input.css-input-card(type='text' placeholder='дд.мм.гг')
+                            //
+                            //                a(href='css-admin.html') Переглянути анкету
+
+                            // end edit card mentor
+
+                            // start card info
+
+                            .css-card-right.gr-o-card-right
+                                //- .css-card-edit.gr-o-card-edit
+                                //-     a(href='', title='Edit')
+                                //-         i.fas.fa-pencil-alt
+                                span Дата проходження інфо-зустрічі:
+                                p 11 лютого 2017
+                                span Наявність документів:
+                                .css-card-check-wrapp
+                                    .css-card-check.gr-o-card-check
+                                        input#box3.css-font(type='checkbox', checked='checked')
+                                        label(for='box3') Довідка про несудимість
+                                    .css-card-check.gr-o-card-check
+                                        input#box42.css-font(type='checkbox', checked='checked')
+                                        label(for='box42') Мед. довідка
+                                    .css-card-check.gr-o-card-check
+                                        input#box41.css-font(type='checkbox', checked='checked')
+                                        label(for='box41') Копiя паспорта
+                                    .css-card-check.gr-o-card-check
+                                        input#box5.css-font(type='checkbox', checked='checked')
+                                        label(for='box5') Заява
+
+                                span Дата проходження консультації з психологом:
+                                p 21 лютого 2017
+
+                                .css-card-subtitle.gr-o-card-subtitle
+                                    span Висновок психолога:
+                                    div
+                                        h5 поведінка:
+                                        p
+                                            | адекватна ситуації; психомоторна розгальмованість;
+                                            br
+                                            | особливості поведінки: пожвавлення, розкутість, дисциплінованість...
+                                        .css-card-subtitle-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad animi, at corporis cum ea exercitationem expedita laboriosam maiores non nostrum quam, quasi sunt tempore ullam vero voluptatem! Ad, est.
+                                        .css-card-subtitle-all Читати більше…
+
+                                label.form-check
+                                    input(type='radio', name='1', value='', checked='checked')
+                                    span Рекомендований для участі в тренінгу
+
+
+                                span Дата тренінга:
+                                p 16 березня 2017
+
+                                .css-card-subtitle.gr-o-card-subtitle
+                                    span Висновок тренера:
+                                    div
+                                        h5 поведінка:
+                                        p
+                                            | адекватна ситуації; психомоторна розгальмованість;
+                                            br
+                                            | особливості поведінки: пожвавлення, розкутість, дисциплінованість...
+                                        .css-card-subtitle-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad animi, at corporis cum ea exercitationem expedita laboriosam maiores non nostrum quam, quasi sunt tempore ullam vero voluptatem! Ad, est.
+                                        .css-card-subtitle-all Читати більше…
+
+                                label.form-check
+                                    input(type='radio', name='1', value='', checked='checked')
+                                    span Допущений до дитини
+                                .access-no
+                                    p
+                                        | Вихованець:
+                                        span Миронець Ігор
+
+                                .access-yes
+                                    input(type='text' placeholder='Впиши ПІБ вихованця')
+                                    button Зберегти
+
+                                .contract-wrapp
+                                    .contract-num
+                                        span Номер договору:
+                                        p Р012-1
+                                    .contract-date
+                                        span Дата договору:
+                                        p 01 травня 2017
+
+                                .css-card-subtitle.gr-o-card-subtitle
+                                    span Коментар:
+                                    div
+                                        h5 поведінка:
+                                        p
+                                            | адекватна ситуації; психомоторна розгальмованість;
+                                            br
+                                            | особливості поведінки: пожвавлення, розкутість, дисциплінованість...
+                                        .css-card-subtitle-content
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad animi, at corporis cum ea exercitationem expedita laboriosam maiores non nostrum quam, quasi sunt tempore ullam vero voluptatem! Ad, est.
+                                        .css-card-subtitle-all Читати більше…
+
+
+                            // end card info
+
+
+
+
+                            // start edit card info
+
+                            //.css-card-right
+                            //    .css-card-edit
+                            //        a(href='', title='Edit')
+                            //            i.fas.fa-check
+                            //    span Дата проходження інфо-зустрічі:
+                            //    input.css-input-card(type='text' placeholder='дд.мм.гг')
+                            //    span Наявність документів:
+                            //    .css-card-check-wrapp
+                            //        .css-card-check
+                            //            input#box3.css-font(type='checkbox', checked='checked')
+                            //            label(for='box3') Довідка про несудимість
+                            //        .css-card-check
+                            //            input#box4.css-font(type='checkbox', checked='checked')
+                            //            label(for='box4') Мед. довідка
+                            //
+                            //    span Дата проходження консультації з психологом:
+                            //    input.css-input-card(type='text' placeholder='дд.мм.гг')
+                            //
+                            //    .css-card-subtitle
+                            //        span Висновок психолога:
+                            //        div
+                            //            h5 поведінка:
+                            //            textarea(rows='5' placeholder='Введите ваше сообщение')
+                            //
+                            //    label.form-check
+                            //        input(type='radio', name='1', value='', checked='checked')
+                            //        span Рекомендований для участі в тренінгу
+                            //
+                            //
+                            //    span Дата тренінга:
+                            //    input.css-input-card(type='text' placeholder='дд.мм.гг')
+                            //
+                            //    .css-card-subtitle
+                            //        span Висновок тренера:
+                            //        div
+                            //            h5 поведінка:
+                            //            textarea(rows='5' placeholder='Введите ваше сообщение')
+                            //
+                            //    label.form-check
+                            //        input(type='radio', name='1', value='', checked='checked')
+                            //        span Допущений до дитини
+                            //    .access-no
+                            //        p
+                            //            | Вихованець:
+                            //            span Миронець Ігор
+                            //
+                            //    .access-yes
+                            //        input(type='text' placeholder='Впиши ПІБ вихованця')
+                            //        button Зберегти
+                            //
+                            //    .contract-wrapp
+                            //        .contract-num
+                            //            span Номер договору:
+                            //            input.m-0.css-input-card(type='text' placeholder='Номер договору')
+                            //        .contract-date
+                            //            span Дата договору:
+                            //            input.m-0.css-input-card(type='text' placeholder='дд.мм.гг')
+                            //
+                            //    .css-card-subtitle
+                            //        span Коментар:
+                            //        div
+                            //            h5 поведінка:
+                            //            textarea(rows='5' placeholder='Введите ваше сообщение')
+
+
+
+                            // end edit card info
+
+
+
+
+
+
+                    .css-card-content
+                        .css-table-mentor-line
+                            .css-table-block-mentor
+                                span.mentor-title
+                                    | Наставниченко
+                                    br
+                                    | Максим Петрович
+                                span.mentor-phone
+                                    | (063) 324 43 43
+                                span.mentor-phone-img
+                                    img(src='img/blue-tel.svg')
+                            .css-table-block-stat
+                                select.triangle-green(required='')
+                                    option(value='') Кандидат в наст…
+                                    option Дыня
+                                    option Тыква
+                                    option Кабачок
+                                    option Баклажан
+                                    option Патиссон
+                                    option Огурец
+
+                            .css-table-block-license
+                                span LOTR 89
+                            .css-table-block-doc
+                                span Є всі
+                            .css-table-block-respon
+                                select.triangle-green(required='')
+                                    option(value='') Выбрать
+                                    option Дыня
+                                    option Тыква
+                                    option Кабачок
+                                    option Баклажан
+                                    option Патиссон
+                                    option Огурец
+
+                        .css-card
+                            .css-card-wrapp
+                                .css-card-left
+                                    .css-card-info
+                                        .css-card-img
+                                            img(src='img/mentor.jpg', alt='')
+                                        .css-card-title
+                                            h2 Наставник
+                                            p
+                                                | Максим
+                                                br
+                                                | Пеcтров
+                                            span Дата народження
+                                            p 25.03.1993 (25  років)
+
+                                        .css-card-edit
+                                            a(href='', title='Edit')
+                                                i.fas.fa-pencil-alt
+                                    .css-card-line
+
+                                    .css-card-stat
+                                        .css-card-stat-wrapp
+                                            div
+                                                span Статус:
+                                                select.triangle-green
+                                                    option Кандидат в наставники
+                                                    option Кандидат в наставники
+                                                    option Кандидат в наставники
+
+                                                span Телефон:
+                                                p +38 (063) 234 12 11
+
+                                                span Email:
+                                                p Maks12_1@gmail.com
+
+                                                span Адреса:
+                                                p пр. Перемоги, 113 г. Киев
+
+                                            div
+                                                span Відповідальний:
+                                                p РЦСССДМ
+
+                                                span Ліцензія:
+                                                p
+                                                    | LOTR 89
+                                                    a(href='')
+                                                        i.fas.fa-envelope
+
+                                                span Дата подачі анкети:
+                                                p 11 січня 2017 року
+
+                                                a(href='') Переглянути анкету
+
+                                .css-card-right
+                                    .css-card-edit
+                                        a(href='', title='Edit')
+                                            i.fas.fa-pencil-alt
+                                    span Дата проходження інфо-зустрічі:
+                                    p 11 лютого 2017
+                                    span Наявність документів:
+                                    .css-card-check-wrapp
+                                        .css-card-check
+                                            input#box1.css-font(type='checkbox', checked='checked')
+                                            label(for='box1') Довідка про несудимість
+                                        .css-card-check
+                                            input#box2.css-font(type='checkbox', checked='checked')
+                                            label(for='box2') Мед. довідка
+
+                                    span Дата проходження консультації з психологом:
+                                    p 21 лютого 2017
+
+                                    .css-card-subtitle
+                                        span Висновок психолога:
+                                        div
+                                            h5 поведінка:
+                                            p
+                                                | адекватна ситуації; психомоторна розгальмованість;
+                                                br
+                                                | особливості поведінки: пожвавлення, розкутість, дисциплінованість...
+                                            .css-card-subtitle-content
+                                                p
+                                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad animi, at corporis cum ea exercitationem expedita laboriosam maiores non nostrum quam, quasi sunt tempore ullam vero voluptatem! Ad, est.
+                                            .css-card-subtitle-all Читати більше…
+
+                                    label.form-check
+                                        input(type='radio', name='1', value='', checked='checked')
+                                        span Рекомендований для участі в тренінгу
+
+
+                                    span Дата тренінга:
+                                    p 16 березня 2017
+
+                                    .css-card-subtitle
+                                        span Висновок тренера:
+                                        div
+                                            h5 поведінка:
+                                            p
+                                                | адекватна ситуації; психомоторна розгальмованість;
+                                                br
+                                                | особливості поведінки: пожвавлення, розкутість, дисциплінованість...
+                                            a(href='') Читати більше…
+
+                                    label.form-check
+                                        input(type='radio', name='1', value='', checked='checked')
+                                        span Допущений до дитини
+                                    .access-no
+                                        p
+                                            | Вихованець:
+                                            span Миронець Ігор
+
+                                    .access-yes
+                                        input(type='text' placeholder='Впиши ПІБ вихованця')
+                                        button Зберегти
+
+                                    .contract-wrapp
+                                        .contract-num
+                                            span Номер договору:
+                                            p Р012-1
+                                        .contract-date
+                                            span Дата договору:
+                                            p 01 травня 2017
+
+                                    .css-card-subtitle
+                                        span Коментар:
+                                        div
+                                            h5 поведінка:
+                                            p
+                                                | адекватна ситуації; психомоторна розгальмованість;
+                                                br
+                                                | особливості поведінки: пожвавлення, розкутість, дисциплінованість...
+                                            a(href='') Читати більше…
+
+
+
+                    .css-card-all.gr-o-css-card-all Дивитися всі
+
+    include ../templates/gr-o-footer-log
+
+
+
+

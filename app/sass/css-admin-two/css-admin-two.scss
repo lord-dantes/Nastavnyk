@@ -1,0 +1,20 @@
+.css-admin-log{
+	& .admin-log-card > button {
+		background: $css-color;
+	}
+	& .admin-log-head > a{
+	background: $css-color;
+	}
+	& .admin-log-description > span{
+		color: $css-color;
+	}
+	& .admin-log-password > span{
+		color: $css-color;
+	}
+	& .setting-card-icon .add-img{
+		background: $css-color;
+	}
+	& .setting-card-icon .delete-img {
+		color: $css-color;
+	}
+}

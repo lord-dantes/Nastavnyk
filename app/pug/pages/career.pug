@@ -1,0 +1,270 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header-admin.pug
+    .content
+        section.admin-link-nav
+            .container
+                a.admin-link(href='') Особистий кабінет наставника >
+                p.admin-link-title
+                    | Денис Сверидов
+
+        .container
+            section.career
+                h2  Профорієнтація
+                span Тут ти можеш знайти місце де вихованець може познайомитися з професією
+                .career-search
+                    i.fas.fa-search
+                    input(type='text', placeholder='Почніть вводити запитання або ключові слова')
+
+                .career-add
+                    i.fas.fa-plus
+                    span Створити компанію
+
+                .career-modal-reg
+                    .career-card-reg
+                        .career-card-close
+                            | ×
+                        p Заповніть анкету! Станьте одним із нас!
+                        .career-card-line
+                        input(type='text' placeholder='Введіть назву компанії')
+                        input(type='text' placeholder='Введіть назву професії')
+                        input(type='text' placeholder='Введіть адресу')
+                        input(type='text' placeholder='Вкажіть зручні днi для зустрічей')
+                        textarea(rows='6' placeholder='Опишіть вашу діяльність')
+                        input(type='text' placeholder='Контактний телефон ')
+                        button Зберегти
+
+                .career-slider
+                    .owl-carousel
+                        .career-table
+                            .career-table-header
+                                .career-table-title Професія
+                                .career-line
+                                .career-table-title Компанія
+                                .career-line
+                                .career-table-title Де?
+                                .career-line
+                                .career-table-title Статус
+
+                            .career-table-line
+                                .career-table-item
+                                    p Ювелір
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Золота, 5
+                                    i.fas.fa-map-marker-alt
+                                .career-table-success
+                                    p Ви з вихованцем записані
+
+                            .career-table-line
+                                .career-table-item
+                                    p Мойщик авто
+                                .career-table-item
+                                    p Драйв
+                                a.career-table-item(href="")
+                                    p вул. М.Лисенка, 23
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Дизайнер
+                                .career-table-item
+                                    p Графік Тор
+                                a.career-table-item(href="")
+                                    p вул. Колоса, 15
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Художник
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Златова, 17а
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Ювелір
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Золота, 5
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Мойщик авто
+                                .career-table-item
+                                    p Драйв
+                                a.career-table-item(href="")
+                                    p вул. М.Лисенка, 23
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Дизайнер
+                                .career-table-item
+                                    p Графік Тор
+                                a.career-table-item(href="")
+                                    p вул. Колоса, 15
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Художник
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Златова, 17а
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+
+                        .career-table
+                            .career-table-header
+                                .career-table-title Професія
+                                .career-line
+                                .career-table-title Компанія
+                                .career-line
+                                .career-table-title Де?
+                                .career-line
+                                .career-table-title Статус
+
+                            .career-table-line
+                                .career-table-item
+                                    p Ювелір
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Золота, 5
+                                    i.fas.fa-map-marker-alt
+                                .career-table-success
+                                    p Ви з вихованцем записані
+
+                            .career-table-line
+                                .career-table-item
+                                    p Мойщик авто
+                                .career-table-item
+                                    p Драйв
+                                a.career-table-item(href="")
+                                    p вул. М.Лисенка, 23
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Дизайнер
+                                .career-table-item
+                                    p Графік Тор
+                                a.career-table-item(href="")
+                                    p вул. Колоса, 15
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Художник
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Златова, 17а
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Ювелір
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Золота, 5
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Мойщик авто
+                                .career-table-item
+                                    p Драйв
+                                a.career-table-item(href="")
+                                    p вул. М.Лисенка, 23
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Дизайнер
+                                .career-table-item
+                                    p Графік Тор
+                                a.career-table-item(href="")
+                                    p вул. Колоса, 15
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+                            .career-table-line
+                                .career-table-item
+                                    p Художник
+                                .career-table-item
+                                    p Приватний майстер
+                                a.career-table-item(href="")
+                                    p вул. Златова, 17а
+                                    i.fas.fa-map-marker-alt
+                                .career-table-btn
+                                    p Домовитися
+
+
+
+                    .career-modal
+                        .career-card
+                            .career-card-close
+                                | ×
+                            h4 Зв’яжися з компанією та домовся про зустріч!
+                            .career-card-line
+                            .career-card-wrapp
+                                img(src='img/old-phone.svg')
+                                .career-card-info
+                                    h5 Контакти
+                                    p +38 (063) 222 12 12
+                                    p +38 (063) 222 22 12
+                                    span nastavniki@gmail.com
+                                    p м.Київ, вул. М.Лисенка 23
+                                    .career-card-check
+                                        label.form-check
+                                            input(type='radio', name='1', value='', checked='checked')
+                                            span.form-check-label-md Домовився
+                                        label.form-check
+                                            input(type='radio', name='1', value='', checked='')
+                                            span.form-check-label-md Не домовився
+
+                                    button Зберегти
+
+                .career-map
+                    iframe(class="career-map-frame" src='https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d81323.1837745071!2d30.476906381392816!3d50.434590515786375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle!5e0!3m2!1sru!2sua!4v1537353884035', width='1110', height='500', frameborder='0', style='border:0', allowfullscreen='')
+
+
+
+
+
+    include ../templates/pre-footer-contact
+    include ../templates/footer-log.pug

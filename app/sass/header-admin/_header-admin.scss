@@ -1,0 +1,65 @@
+.admin{
+  @include flex-start-center;
+  &-menu{
+    &-on{
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      position: absolute;
+      width: 200px;
+      top: 50px;
+      z-index: 100;
+      & a{
+        font-size: 10px;
+        letter-spacing: 0.1px;
+        color: $grafit-color;
+        display: block;
+        margin-bottom: 5px;
+        &:hover{
+          color: $main-color;
+        }
+        & i{
+          color: $main-color;
+          margin-right: 10px;
+        }
+      }
+    }
+    &-off{
+      display: block;
+      font-size: 15px;
+      letter-spacing: 0.95px;
+      color: $main-color;
+      cursor: pointer;
+      & > i{
+        margin-left: 5px;
+      }
+    }
+  }
+  & > img{
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+    background: #eee;
+    margin: 0 20px 0 50px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+  }
+  &-title{
+    position: relative;
+    & span{
+      display: block;
+      font-size: 12px;
+      letter-spacing: 0.46px;
+      color: $grafit-color;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    & a{
+
+      position: relative;
+
+    }
+  }
+}
+

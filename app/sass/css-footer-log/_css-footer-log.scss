@@ -1,0 +1,47 @@
+.css-footer{
+  &-logo{
+    margin-right: 130px;
+  }
+  &-wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-log{
+    background: #3F4C55;
+    padding: 65px 0 78px;
+  }
+  &-nav{
+    display: flex;
+    align-items: center;
+    &-item{
+      margin-right: 130px;
+      & > a{
+        color: #fff;
+        display: block;
+        padding: 5px 0;
+        font-size: 15px;
+        letter-spacing: 0.95px;
+        font-weight: 100;
+      }
+    }
+  }
+  &-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.19);
+    background: $css-color;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    letter-spacing: 0.15px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 15px;
+    font-weight: 100;
+  }
+}

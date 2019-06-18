@@ -1,0 +1,152 @@
+.css-dating{
+  padding: 80px 0 125px;
+  & button{
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    background: $css-color;
+    color: #fff;
+    width: 153px;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    cursor: pointer;
+  }
+  &-mentor{
+    margin-bottom: 25px;
+    & input{
+      height: 55px;
+      border-radius: 2px;
+      background-color: #E2EDF0;
+      margin-bottom: 5px;
+      align-items: center;
+      border: 0;
+      display: block;
+      width: 100%;
+      padding: 0 30px;
+      &::placeholder{
+        opacity: 0.3;
+        color: #000000;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+      }
+    }
+    & p{
+      font-size: 15px;
+      margin-bottom: 0;
+      letter-spacing: 1.04px;
+      color: $grafit-color;
+      font-weight: 500;
+      margin-left: 30px;
+    }
+    & span{
+      opacity: 0.5;
+      color: #000000;
+      font-size: 13px;
+      display: block;
+      margin:0 0 15px 30px;
+    }
+  }
+  &-local{
+    margin-bottom: 50px;
+    & input{
+      height: 55px;
+      border-radius: 2px;
+      background-color: #E2EDF0;
+      margin-bottom: 5px;
+      align-items: center;
+      border: 0;
+      display: block;
+      width: 100%;
+      padding: 0 30px;
+      &::placeholder{
+        opacity: 0.3;
+        color: #000000;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+      }
+    }
+    & p{
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      color: $grafit-color;
+      font-weight: 500;
+      margin-left: 30px;
+    }
+  }
+  &-center{
+    margin-bottom: 35px;
+    & p{
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      color: $grafit-color;
+      font-weight: 500;
+      margin-left: 30px;
+    }
+    & a{
+      font-size: 13px;
+      letter-spacing: 0.9px;
+      text-align: right;
+      text-decoration: underline;
+      color: $css-color;
+      display: block;
+    }
+  }
+  &-wrapp{
+    width: 685px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    &:before{
+      background-image: url(../img/green-cube.svg);
+      background-repeat: no-repeat;
+      background-position: center left;
+      position: absolute;
+      content: "";
+      background-size: 100%;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      right: 100px;
+      top: 80px;
+    }
+    & h2{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1.16px;
+      color: $grafit-color;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+}
+
+.dating-select {
+  height: 55px;
+  border-radius: 2px;
+  background-color: #E2EDF0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  & .select2-container--default .select2-selection--single{
+    border: 0!important;
+    background: transparent!important;
+  }
+  & .js-example-basic-single{
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+  }
+  & .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: $grafit-color;
+    font-size: 13px;
+    letter-spacing: 0.9px;
+  }
+  & .select2-container .select2-selection--single .select2-selection__rendered{
+    padding: 0 30px!important;
+  }
+  & .select2-container--default .select2-selection--single .select2-selection__arrow{
+    right: 30px!important;
+  }
+}

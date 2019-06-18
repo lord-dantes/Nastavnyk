@@ -1,0 +1,25 @@
+extends ../default.pug
+block pageContent
+    include ../templates/header.pug
+    .content
+        section.register-new
+            .container
+                .register-new-wrapp
+                    .register-new-content
+                        h3
+                            span Реєстрація
+                            br
+                            |  Перший крок
+                        .register-new-form
+                            form(action='')
+                                input(type='email', placeholder='User@gmail.com', required='')
+                                input(type='password', placeholder='Пароль', required='')
+                                input(type='password', placeholder='Підтвердіть пароль', required='')
+                                button(type='subbmit') Далі
+                                .register-new-line
+                                a(href='video-mentor.html') Забули свій пароль?
+
+
+
+
+    include ../templates/footer-log.pug

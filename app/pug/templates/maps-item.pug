@@ -1,0 +1,51 @@
+.gr-o-maps-item
+	include maps-css.css
+	img(src="img/maps-item-background.svg", class="gr-o-maps-item-background" alt="")
+	.gr-o-maps-item-infobox
+		h2.gr-o-maps-item-infobox-title Донецька область
+		div.gr-o-maps-item-closed
+			img(src="img/maps-item-closed.svg", alt="")
+		ul.gr-o-maps-item-infobox-items_child
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 16 000
+				|дітей в установах
+				a(class="gr-o-maps-item-infobox-item_child-link" href="javascript:void(0)") Оновити кількість дітей
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 90
+				|дітей з Наставниками (активна взаимодія) / #[span.gr-o-maps-item-infobox-item_child-stats 0,005%]
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 170
+				|сертифікованих Наставников / #[span.gr-o-maps-item-infobox-item_child-stats 32%]
+		ul.gr-o-maps-item-infobox-items_child
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 190
+				|співбесід з психологом / #[span.gr-o-maps-item-infobox-item_child-stats 36%]
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 270
+				|інфо-зустрічей / #[span.gr-o-maps-item-infobox-item_child-stats 51%]
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 530
+				|подали заяву / #[span.gr-o-maps-item-infobox-item_child-stats 32%]
+		ul.gr-o-maps-item-infobox-items_child
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 46
+				|установ
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 96
+				|ЦСССДМ-ів
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 5
+				|партнерських ГО (активних)
+		ul.gr-o-maps-item-infobox-items_child
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 190
+				|співбесід з психологом / #[span.gr-o-maps-item-infobox-item_child-stats 36%]
+			li.gr-o-maps-item-infobox-item_child
+				span.gr-o-maps-item-infobox-item_child-count 0
+				|пар розформовано
+	.gr-o-maps-item-findbox
+		p.gr-o-maps-item-findbox-title * Щоб здійснити перехід до статистики конкретного ЦСССДМ даної області, введіть його назву в поле для пошуку або виберіть зі списку
+		form(action="POST")
+			div.form-dating-wrapper-input.gr-o-form-dating-wrapper-input
+				img(src="img/search.svg", alt="")
+				input.form-dating-input.gr-o-form-dating-input(type="text" placeholder="Почніть вводити назву ЦСССДМ тут")

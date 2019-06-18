@@ -1,0 +1,74 @@
+.gr-o{
+	&-mentor &-counter-numb{
+		color:$gr-o-main;
+	}
+	&-mentor &-mentor-add > i{
+		background:$gr-o-main;
+	}
+	&-mentor &-css-table-header{
+		background:$gr-o-main;
+	}
+	&-mentor &-triangle-purple{
+		background-image: url(../../img/triangle-purple.svg);
+	}
+	&-mentor &-card-title h2{
+		color:$gr-o-main;
+	}
+	&-mentor &-card-edit a{
+		background:$gr-o-main;
+	}
+	&-mentor &-card-stat-wrapp > div > span{
+		color:$gr-o-main;
+	}
+	&-mentor &-card-stat-wrapp > div > p > a i{
+		color:$gr-o-main;
+	}
+	&-mentor &-card-stat-wrapp > div > a{
+		background-color: $gr-o-main;
+	}
+	&-mentor &-card-right > span{
+		color: $gr-o-main;
+	}
+	&-mentor &-card-check input[type=checkbox].css-font:checked ~ label:before{
+		color:$gr-o-main;
+	}
+	&-mentor &-card-subtitle > div{
+		 background:$gr-o-main;
+	}
+	&-mentor &-card-right > label input[type="radio"]:checked:after{
+		background:$gr-o-main !important;
+	}
+	&-mentor &-card-right > label > span{
+		color:$gr-o-main;
+	}
+	&-mentor &-card-right .access-yes button{
+		background:$gr-o-main;
+	}
+	&-mentor &-card-right .contract-num span{
+		color:$gr-o-main;
+	}
+	&-mentor &-card-right .contract-date span{
+		color:$gr-o-main;
+	}
+	&-mentor &-css-card-all{
+		color:$gr-o-main;
+	}
+	&-mentor &-mentor-phone{
+		color:$gr-o-main;
+	}
+	&-mentor &-social-card-icon .add-img{
+		background:$gr-o-main;
+	}
+	&-mentor &-social-card-icon .delete-img{
+		color:$gr-o-main;
+	}
+	&-mentor &-social-card-title h2{
+		color:$gr-o-main;
+	}
+	&-mentor &-social-card-edit,&-social-card-close{
+		background:$gr-o-main;
+	}
+	&-mentor &-social-card-wrapp > div > span{
+		color:$gr-o-main;
+	}
+}

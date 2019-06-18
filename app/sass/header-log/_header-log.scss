@@ -1,0 +1,27 @@
+.header{
+  font-family: $second-font;
+  &-notification{
+    display: flex;
+    align-items: center;
+    &-title{
+      font-size: 15px;
+      letter-spacing: 0.95px;
+      display: block;
+      color: $black-color;
+      margin-right: 60px;
+    }
+    &-icon{
+      display: block;
+      color: $main-color;
+      font-size: 20px;
+    }
+  }
+  &-log{
+    box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+    padding: 15px 0;
+    &-wrapp{
+      width: 100%;
+      @include flex-between-center;
+    }
+  }
+}

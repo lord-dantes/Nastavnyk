@@ -1,0 +1,16 @@
+.header-green {
+  font-family: $second-font;
+  box-shadow: 0 2px 35px 0 rgba(165, 164, 164, 0.5);
+  & .header-login{
+    color: $css-color;
+  }
+  & .header-link span i{
+    color: $css-color;
+  }
+  & .header-donate{
+    @include green-btn;
+    &:hover{
+      box-shadow: 2px 5px 10px 0 $css-color;
+    }
+  }
+}

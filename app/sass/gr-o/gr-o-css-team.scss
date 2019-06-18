@@ -1,0 +1,40 @@
+.gr-o{
+	&-team-link p{
+		color: $gr-o-main;
+	}
+	&-team-people-item div > h5{
+		color:$gr-o-main;
+	}
+	&-team-card-title div {
+		& a{
+			background:$gr-o-main;
+		}
+		& h4{
+			color: $gr-o-main
+		}
+	}
+	&-team-card-wrapp div span{
+		color: $gr-o-main;
+	}
+	&-team-card > h3{
+		color:$gr-o-main;
+	}
+	&-team-local > span{
+		color:$gr-o-main;
+	}
+	&-team-local > div div > span {
+		color: $gr-o-main;
+	}
+	&-team-diary-more{
+		color:$gr-o-main;
+	}
+	&-team-carousel .owl-dot{
+		background-color:$gr-o-main !important;
+	}
+	&-team-diary-content div span{
+		color: $gr-o-main;
+	}
+	&-team-diary-close{
+		color: $gr-o-main;
+	}
+}

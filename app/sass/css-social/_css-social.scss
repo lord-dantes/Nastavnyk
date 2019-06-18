@@ -1,0 +1,1164 @@
+.css {
+  &-big-card {
+    display: none;
+    padding: 5px;
+  }
+  &-info {
+    font-size: 14px;
+    letter-spacing: 0.97px;
+    line-height: 16px;
+    color: $css-color;
+    margin-bottom: 60px;
+    font-weight: 500;
+    cursor: default;
+  }
+  &-org {
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+    padding: 40px 25px 50px 75px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    &-icon {
+      margin-right: 26px;
+      & label {
+        width: 14px;
+        height: 14px;
+        border-radius: 50px;
+        background: #037286;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #fff;
+        font-size: 8px;
+        cursor: pointer;
+      }
+    }
+    &-all {
+      color: $css-color;
+      margin-left: auto;
+      margin-bottom: 10px;
+      display: block;
+      text-decoration: underline;
+      width: 100px;
+      &:hover {
+        color: $css-color;
+      }
+      & span {
+        font-size: 14px;
+        letter-spacing: 0.14px;
+        display: block;
+      }
+    }
+    &-block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    &-mentors {
+      width: 245px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: default;
+      & span {
+        margin: 0 10px 0 50px;
+        cursor: pointer;
+      }
+    }
+    &-child {
+      width: 210px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: default;
+      & span {
+        margin: 0 10px 0 50px;
+        cursor: pointer;
+      }
+    }
+    &-place {
+      width: 210px;
+    }
+    &-contract {
+      width: 160px;
+      line-height: 1.2;
+    }
+    &-data {
+      width: 210px;
+      line-height: 1.2;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      background: $css-color;
+      border-radius: 8px;
+      color: #fff;
+      padding: 20px 0;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      line-height: 1.3;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &-search {
+      width: 680px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: #E2EDF0;
+      border-radius: 2px;
+      padding: 18px 35px;
+      margin-bottom: 40px;
+      z-index: 1;
+      position: relative;
+      & input {
+        border: 0;
+        background: transparent;
+        width: 100%;
+        margin-left: 30px;
+        &::placeholder {
+          opacity: 0.4;
+          font-size: 15px;
+          letter-spacing: 1.04px;
+        }
+      }
+    }
+    &-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 50px;
+      &-edit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        & img {
+          width: 115px;
+          object-fit: cover;
+        }
+      }
+      & img {
+        width: 115px;
+        object-fit: cover;
+      }
+    }
+    &-title {
+      & textarea {
+        border: 0;
+        width: 214px;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $grafit-color;
+        line-height: 1.3;
+        margin-bottom: 25px;
+        display: block;
+      }
+      &-wrapp {
+        display: flex;
+        justify-content: space-between;
+        & div {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          & > input {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            color: $css-color;
+            margin-bottom: 0;
+            height: 28px;
+            width: 43px;
+            margin-right: 5px;
+            border: 0;
+          }
+          &:first-child {
+            margin-right: 15px;
+          }
+          & p {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            color: $css-color;
+            margin-bottom: 0;
+            height: 40px;
+            margin-right: 5px;
+          }
+          & span {
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 0.33px;
+            color: $grafit-color;
+            line-height: 1;
+            display: block;
+          }
+        }
+      }
+      & h3 {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        color: $css-color;
+        text-transform: uppercase;
+      }
+      & > p {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $grafit-color;
+        line-height: 1.3;
+        margin-bottom: 25px;
+      }
+    }
+    &-line {
+      width: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin: 0 60px;
+    }
+    &-info {
+      margin-right: 60px;
+      & > input {
+        border: 0;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+        font-size: 12px;
+        letter-spacing: 0.56px;
+        color: $grafit-color;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: block;
+      }
+      & span {
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.46px;
+        color: $css-color;
+        display: block;
+        margin-bottom: 5px;
+      }
+      & p {
+        font-size: 12px;
+        letter-spacing: 0.56px;
+        color: $grafit-color;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      & a {
+        display: block;
+        color: $css-color;
+        font-size: 12px;
+        letter-spacing: 0.56px;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+    }
+    &-mentor {
+      width: 200px;
+      & > span {
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.46px;
+        color: $css-color;
+        display: block;
+        margin-bottom: 5px;
+      }
+      & select {
+        border: 0;
+        font-size: 12px;
+        letter-spacing: 0.56px;
+        color: $grafit-color;
+        font-weight: 500;
+        margin-bottom: 30px;
+        display: block;
+      }
+    }
+    &-doc {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      & div {
+        & input {
+          font-size: 14px;
+          letter-spacing: 0.46px;
+          color: $grafit-color;
+          margin-bottom: 0;
+          border: 0;
+          border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+          width: 100%;
+        }
+        & span {
+          font-size: 10px;
+          font-weight: bold;
+          letter-spacing: 0.33px;
+          color: $grafit-color;
+        }
+        & p {
+          font-size: 14px;
+          letter-spacing: 0.46px;
+          color: $grafit-color;
+          margin-bottom: 0;
+        }
+        &:first-child {
+          margin-right: 25px;
+        }
+      }
+    }
+    &-edit {
+      margin-left: auto;
+      & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: $css-color;
+        color: #fff;
+      }
+    }
+  }
+  &-del {
+    & i {
+      color: $css-color;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &-line-modal {
+    width: 100%;
+    height: 1px;
+    background: rgba(151, 151, 151, 0.23);
+    margin: 25px 0;
+  }
+  &-slip {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+    &-choice {
+      display: flex;
+      justify-content: flex-start;
+      & div {
+        & button {
+          width: 116px;
+          border-radius: 4px;
+          background-color: $css-color;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          border: 0;
+          color: #fff;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 0.56px;
+          padding: 8px 0;
+          margin-top: 10px;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 2px 5px 10px 0 $css-color;
+          }
+        }
+        &:first-child {
+          width: 55%;
+          margin-right: 30px;
+        }
+        &:last-child {
+          width: 45%;
+        }
+        & select {
+          font-size: 12px;
+          letter-spacing: 0.56px;
+          border: 0;
+          width: 100%;
+          margin-bottom: 13px;
+        }
+        & input {
+          font-size: 12px;
+          letter-spacing: 0.56px;
+          border: 0;
+          width: 100%;
+          border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+          margin-bottom: 10px;
+        }
+      }
+      & span {
+        display: block;
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.46px;
+        color: $css-color;
+      }
+    }
+    &-input {
+      &-value {
+        width: 140px;
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.33px;
+        color: $grafit-color;
+        border: 0;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+      }
+    }
+    &-icon {
+      margin-right: 24px;
+      & label {
+        width: 14px;
+        height: 14px;
+        border-radius: 50px;
+        background: $css-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #fff;
+        font-size: 8px;
+        cursor: pointer;
+      }
+    }
+    &-modal {
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      width: 600px;
+      margin: 0 auto;
+      position: relative;
+      top: 3%;
+      padding: 40px 25px 50px 50px;
+    }
+    &-close {
+      width: 25px;
+      text-align: center;
+      margin-left: auto;
+      font-size: 40px;
+      color: #979797;
+      font-weight: 100;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 25px;
+    }
+    &-main {
+      display: flex;
+      justify-content: flex-start;
+      & div {
+        & p {
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 0.8px;
+          color: $css-color;
+          margin-bottom: 5px;
+        }
+        & span {
+          width: 150px;
+          font-size: 10px;
+          font-weight: bold;
+          letter-spacing: 0.33px;
+          color: $grafit-color;
+          display: block;
+        }
+        & > textarea {
+          width: 210px;
+          height: 62px !important;
+          border: 0;
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 0.8px;
+          color: $grafit-color;
+          line-height: 1.3;
+          resize: none;
+          &::placeholder {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            color: $grafit-color;
+            line-height: 1.3;
+          }
+        }
+      }
+      & img {
+        width: 108px;
+        height: 134px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-right: 10px;
+        display: block;
+      }
+    }
+  }
+  &-table {
+    &-block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: $css-color;
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 15px;
+    letter-spacing: 1.04px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &-line {
+    width: 2px;
+    background: #fff;
+    height: 45px;
+  }
+  &-title {
+    &-org {
+      width: 245px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: default;
+      & span {
+        margin: 0 10px 0 50px;
+        cursor: pointer;
+      }
+    }
+    &-stat {
+      width: 400px;
+    }
+    &-license {
+      width: 210px;
+    }
+    &-val {
+      width: 198px;
+    }
+  }
+  &-block {
+    &-mentor {
+      &-link {
+        text-align: center;
+      }
+    }
+    &-sort-img {
+      cursor: pointer;
+      margin: 0 15px 0 20px;
+    }
+    &-mentors {
+      width: 245px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      cursor: pointer;
+      & > :hover {
+        color: $css-color;
+        transition: none;
+      }
+      & > :hover .help-info-org {
+        display: block;
+      }
+      &-phone {
+        display: none;
+        color: #037286;
+        font-weight: 500;
+        margin: 0 15px 0 20px;
+      }
+      & a {
+        color: $grafit-color;
+      }
+    }
+    &-child {
+      width: 210px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      & > a:hover {
+        color: $css-color;
+        transition: none;
+      }
+      & > a:hover .help-info-org {
+        display: block;
+      }
+      & a {
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+        line-height: 1.3;
+        color: $black-color;
+      }
+    }
+    &-place {
+      width: 210px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-contract {
+      width: 160px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-data {
+      width: 210px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-title {
+      cursor: pointer;
+      margin: 0 15px 0 20px;
+    }
+    &-phone {
+      display: none;
+      color: $css-color;
+      font-weight: 500;
+      margin: 0 15px 0 20px;
+    }
+    &-img {
+      cursor: pointer;
+      margin: 0 15px 0 20px;
+    }
+    &-org {
+      width: 245px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      color: $grafit-color;
+      & > .css-block-title {
+        &:hover {
+          color: $css-color;
+          transition: none;
+        }
+        &:hover .help-info-org {
+          display: block;
+        }
+      }
+    }
+    &-stat {
+      width: 400px;
+      & select {
+        padding: 0 35px;
+        border: 0;
+        height: 55px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        -webkit-box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+        box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+      }
+    }
+    &-license {
+      width: 210px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-val {
+      width: 198px;
+      height: 55px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1.04px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  &-social {
+    position: relative;
+    z-index: 1;
+    &:before {
+      background-image: url(../img/css-bg.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      content: "";
+      background-size: 50%;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      right: 100px;
+      top: 80px;
+    }
+    &-all {
+      color: $css-color;
+      margin-left: auto;
+      margin-bottom: 60px;
+      display: block;
+      text-decoration: underline;
+      width: 100px;
+      & span {
+        font-size: 14px;
+        letter-spacing: 0.14px;
+        display: block;
+      }
+      &:hover {
+        color: $css-color;
+      }
+    }
+    &-main {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-info {
+      padding-top: 110px;
+      &-wrapp {
+        display: flex;
+        justify-content: flex-start;
+        width: 760px;
+        margin-bottom: 100px;
+      }
+    }
+    &-link {
+      margin-right: 35px;
+      & a {
+        width: 250px;
+        border-radius: 8px;
+        background-color: $css-color;
+        box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+        padding: 20px 0;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.04px;
+        line-height: 18px;
+        &:hover {
+          box-shadow: 2px 5px 10px 0 $css-color;
+        }
+      }
+    }
+    &-title {
+      z-index: 1;
+      & p {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 0.83px;
+        text-transform: uppercase;
+        line-height: 1.3;
+        margin-bottom: 60px;
+        & > span {
+          color: $css-color;
+          font-size: 25px;
+          letter-spacing: 0.83px;
+        }
+      }
+      & span {
+        font-size: 20px;
+        letter-spacing: 1.14px;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+    }
+    &-img {
+      position: relative;
+      right: 510px;
+      & img {
+        width: 890px;
+      }
+    }
+    &-search {
+      width: 680px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: #E2EDF0;
+      border-radius: 2px;
+      padding: 18px 35px;
+      margin-bottom: 18px;
+      z-index: 1;
+      position: relative;
+      & input {
+        border: 0;
+        background: transparent;
+        width: 100%;
+        margin-left: 30px;
+        &::placeholder {
+          opacity: 0.4;
+          font-size: 15px;
+          letter-spacing: 1.04px;
+        }
+      }
+    }
+    &-add {
+      width: 160px;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      position: relative;
+      & i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: $css-color;
+        color: #fff;
+        margin: 0 auto;
+      }
+      & span {
+        display: block;
+        font-size: 15px;
+        letter-spacing: 1.04px;
+        color: $grafit-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.social{
+  &-input{
+    &-name{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      line-height: 1;
+      margin-bottom: 3px;
+      display: block;
+      border: 0;
+      width: 100%;
+    }
+    &-surname{
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $grafit-color;
+      line-height: 1;
+      margin-bottom: 10px;
+      display: block;
+      border: 0;
+      width: 100%;
+    }
+    &-birth{
+      font-size: 14px;
+      letter-spacing: 0.46px;
+      margin-bottom: 0;
+      display: block;
+      border: 0;
+      width: 100%;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+      color: $grafit-color;
+      font-weight: 500;
+    }
+  }
+  &-info{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    &-edit{
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+    }
+  }
+  &-modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+    &-card{
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: -2px -1px 9px 0 rgba(0, 0, 0, 0.17);
+      width: 510px;
+      padding: 40px 25px 75px 55px;
+      margin: 0 auto;
+      position: relative;
+      top: 3%;
+    }
+  }
+  &-card{
+    &-wrapp{
+      display: flex;
+      justify-content: space-between;
+      & div{
+        width: 49%;
+        position: relative;
+        z-index: 1;
+        & input{
+          border: 0;
+          border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+          font-size: 12px;
+          letter-spacing: 0.56px;
+          color: $grafit-color;
+          font-weight: 500;
+          margin-bottom: 10px;
+          display: block;
+        }
+        & > span{
+          color: $css-color;
+          font-size: 12px;
+          letter-spacing: 0.46px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          display: block;
+        }
+        & p{
+          font-size: 12px;
+          letter-spacing: 0.56px;
+          & a{
+            margin-left: 8px;
+            &:hover .social-card-bage {
+              display: block;
+            }
+            & i{
+              color: $css-color;
+              font-size: 14px;
+              &:hover {
+                color: #0FAD19;
+              }
+            }
+          }
+          & span{
+            line-height: 1.1;
+            font-size: 9px;
+            letter-spacing: 0.5px;
+            width: 120px;
+            padding: 10px;
+            position: absolute;
+            background: #fff;
+            top: 35px;
+            right: 35px;
+            box-shadow: 0 2px 5.2px 0.8px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            z-index: 1;
+            display: none;
+            color: $grafit-color;
+            margin-bottom: 0;
+            &:before{
+              content: ' ';
+              position: absolute;
+              left: 10px;
+              bottom: -10px;
+              border-left: 10px solid #fff;
+              border-bottom: 10px solid transparent;
+              border-top: 1px solid #fff;
+              filter: drop-shadow(-3.7px 4.7px 2.7px rgba(0, 0, 0, 0.15));
+            }
+          }
+        }
+        & select{
+          font-size: 12px;
+          letter-spacing: 0.56px;
+          border: 0;
+          position: relative;
+          bottom: 3px;
+          right: 3px;
+          margin-bottom: 10px;
+        }
+        & > a{
+          width: 160px;
+          border-radius: 4px;
+          background-color: $css-color;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          color: #fff;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 0.56px;
+          padding: 9px 18px;
+          &:hover i{
+            color:#0FAD19;;
+          }
+        }
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 1px;
+      background: rgba(151, 151, 151, 0.23);
+      margin-bottom: 30px;
+    }
+    &-edit{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: $css-color;
+      margin-left: auto;
+      color: #fff;
+      cursor: pointer;
+    }
+    &-close{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: $css-color;
+      margin-left: 5px;
+      cursor: pointer;
+      & i{
+        color: #fff;
+      }
+    }
+    &-img{
+      margin-right: 50px;
+      &-edit{
+        margin-right: 10px;
+        & img{
+          width: 100px;
+          height: 135px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      }
+      & img{
+        width: 100px;
+        height: 135px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+    &-title{
+      width: 175px;
+      & h2{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        color: $css-color;
+      }
+      & > p{
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #3F4C55;
+        line-height: 1;
+        margin-bottom: 10px;
+        &:last-child{
+          font-size: 14px;
+          letter-spacing: 0.46px;
+          margin-bottom: 0;
+          font-weight: initial;
+        }
+      }
+      & span{
+        display: block;
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 0.33px;
+        margin-bottom: 2px;
+      }
+    }
+    &-icon{
+      margin-right: 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      & .add-img{
+        width: 14px;
+        height: 14px;
+        border-radius: 50px;
+        background: $css-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #fff;
+        font-size: 8px;
+        cursor: pointer;
+      }
+      & .delete-img{
+        color: $css-color;
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
